@@ -1,9 +1,9 @@
-import Navbar from "../../components/Navbar";
+import Navigation from "../../components/Navigation";
 
 const Pricing = () => {
   return (
     <div>
-      <Navbar />
+      <Navigation />
     </div>
   );
 };

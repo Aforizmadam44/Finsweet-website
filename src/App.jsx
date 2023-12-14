@@ -1,10 +1,10 @@
-import Home from "./pages/Home";
+import Routing from "./components/Routing";
 
 function App() {
   return (
     <>
       <div>
-        <Home />
+        <Routing />
       </div>
     </>
   );

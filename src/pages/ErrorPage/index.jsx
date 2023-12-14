@@ -1,11 +1,12 @@
 import Navigation from "../../components/Navigation";
 
-const Blog = () => {
+const ErrorPage = () => {
   return (
     <div>
       <Navigation />
+      <h1>ERROR</h1>
     </div>
   );
 };
 
-export default Blog;
+export default ErrorPage;

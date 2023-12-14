@@ -1,10 +1,10 @@
-import Navbar from "../../components/Navbar";
+import Navigation from "../../components/Navigation";
 
 const AboutUs = () => {
   return (
     <div>
       {" "}
-      <Navbar />
+      <Navigation />
     </div>
   );
 };
