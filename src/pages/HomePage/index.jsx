@@ -1,10 +1,10 @@
-import Solution from "../../components/Description";
+import Solution from "../../components/Solution";
 import Header from "../../components/Header";
 import Navigation from "../../components/Navigation";
 
 const HomePage = () => {
   return (
-    <div className="bg-violet">
+    <div>
       <Navigation />
       <Header />
       <Solution />
