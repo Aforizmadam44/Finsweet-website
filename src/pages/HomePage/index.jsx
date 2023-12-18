@@ -6,6 +6,7 @@ import Impression from "../../components/Impression";
 import Logos from "../../components/Logos";
 import Features from "../../components/Features";
 import Discover from "../../components/Discover";
+import Result from "../../components/Result";
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
       <Logos />
       <Discover />
       <Features />
+      <Result />
     </div>
   );
 };
