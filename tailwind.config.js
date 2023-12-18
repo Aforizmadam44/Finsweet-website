@@ -16,6 +16,9 @@ export default {
         rose: "#D798E126",
         violet: "#F0F2FE;",
       },
+      container: {
+        center: true,
+      },
     },
   },
   plugins: [require("flowbite/plugin")],

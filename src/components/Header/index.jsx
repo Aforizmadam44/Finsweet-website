@@ -2,7 +2,7 @@ import Button from "../Button";
 
 const Header = () => {
   return (
-    <div className="my-14 text-primary w-[50%] font-bold  mx-auto text-center ">
+    <div className="container my-14 w-[50%] text-primary font-bold   text-center ">
       <h1 className="text-4xl mb-6">
         Satışlarınızı və xidmətlərinizi inkişaf etdirmək üçün ən yaxşı proqram
       </h1>
@@ -11,7 +11,7 @@ const Header = () => {
         təkliflər və professional xidmətlər təqdim edirik, bizə qoşulun və
         perspektiv təminata sahiblənin.
       </p>
-      <div className="inputAndBtn  ">
+      <div className="inputAndBtn">
         <input
           type="text"
           placeholder="Enter your mail"
@@ -19,7 +19,7 @@ const Header = () => {
         />
         <Button
           title={"Ödənişsiz sına"}
-          className="hover:bg-slate-100 hover:text-slate-100 border-primary"
+          className="hover:bg-slate-100 hover:text-slate-100"
         ></Button>
       </div>
     </div>
