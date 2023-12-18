@@ -6,6 +6,10 @@
   transition: 0.7s;
 }
 
+.navlink:hover {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #1d2130;
+}
 @media screen and (max-width: 767px) {
   .active {
     padding: 3px;

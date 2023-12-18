@@ -5,6 +5,7 @@ import Difference from "../../components/Difference";
 import Impression from "../../components/Impression";
 import Logos from "../../components/Logos";
 import Features from "../../components/Features";
+import Discover from "../../components/Discover";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <Difference />
       <Impression />
       <Logos />
+      <Discover />
       <Features />
     </div>
   );
