@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const Difference = () => {
   return (
-    <div className="container w-[80%] flex mx-auto">
+    <div className="container w-[80%] flex mx-auto my-28">
       <div className="flex-1">
         <p className="text-lightBlue font-bold text-lg">
           Why should you work with us?

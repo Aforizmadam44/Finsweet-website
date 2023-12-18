@@ -3,6 +3,8 @@ import Header from "../../components/Header";
 import Navigation from "../../components/Navigation";
 import Difference from "../../components/Difference";
 import Impression from "../../components/Impression";
+import Logos from "../../components/Logos";
+import Features from "../../components/Features";
 
 const HomePage = () => {
   return (
@@ -12,6 +14,8 @@ const HomePage = () => {
       <Solution />
       <Difference />
       <Impression />
+      <Logos />
+      <Features />
     </div>
   );
 };

@@ -15,6 +15,7 @@ export default {
         black: "#111111",
         rose: "#D798E126",
         violet: "#F0F2FE;",
+        softBlue: "#6b7cff",
       },
       container: {
         center: true,
