@@ -10,7 +10,7 @@ import Result from "../../components/Result";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Navigation />
       <Header />
       <Solution />
