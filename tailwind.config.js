@@ -16,9 +16,18 @@ export default {
         rose: "#D798E126",
         violet: "#F0F2FE;",
         softBlue: "#6b7cff",
+        iden1: "#8758FF",
+        iden2: "#BDCBFF",
+        iden3: "#CFBDFF",
       },
       container: {
         center: true,
+        padding: {
+          DEFAULT: "1rem", // Varsayılan padding değeri
+          sm: "2rem", // Küçük ekranlarda padding
+          lg: "4rem", // Büyük ekranlarda padding
+          xl: "5rem", // Extra-large ekranlarda padding
+        },
       },
     },
   },

@@ -22,7 +22,7 @@ const Solution = () => {
 
   return (
     <>
-      <div className="text-center mx-auto  ">
+      <div className="text-center mx-auto flex flex-col my-20 justify-center   ">
         <p className="text-lightBlue text-2xl my-4 font-bold">
           Yüksək keyfiyyət
         </p>
@@ -30,7 +30,7 @@ const Solution = () => {
           Biznesiniz üçün optimal həllərə sahibik.
         </h3>
       </div>
-      <div className="flex justify-between p-14 bg-violet w-[80%] mx-auto my-16 rounded-xl">
+      <div className="container flex justify-between p-14 bg-violet  mx-auto rounded-xl w-[80%]">
         {data.map(({ id, title, icon, description }) => (
           <div key={id} className="w-[25%]">
             <img src={icon} alt="" className="my-6" />

@@ -17,15 +17,15 @@ const Result = () => {
   }, []);
 
   return (
-    <div className="container mx-auto w-[80%]">
+    <div className="container mx-auto w-[100%]">
       <p className="text-3xl text-primary text-center font-bold">
-        The stunning results our customers have experienced
+        Daha yaxından tanış olun:
       </p>
-      <div className="flex mx-auto my-6 gap-2">
+      <div className="flex  justify-center mx-auto my-6 gap-2">
         {data.map(({ id, description, name, job, icon }) => (
           <div
             key={id}
-            className="flex-1 w-[30%] text-center flex flex-col gap-4 border-2 p-4 rounded-lg"
+            className="flex  w-[29.5%] text-center  flex-col gap-8 border-2 p-4 cursor-pointer rounded-lg hover:scale-105 transition-all duration-300"
           >
             <p className="text-md font-bold">{description}</p>
             <img src={icon} alt={name} className="mx-auto" />

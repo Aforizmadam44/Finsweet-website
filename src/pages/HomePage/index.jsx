@@ -7,12 +7,16 @@ import Logos from "../../components/Logos";
 import Features from "../../components/Features";
 import Discover from "../../components/Discover";
 import Result from "../../components/Result";
+import Ready from "../../components/Ready";
+import Footer from "../../components/Footer";
+import Dashboard from "../../components/Dashboard";
 
 const HomePage = () => {
   return (
     <div className="overflow-hidden">
       <Navigation />
       <Header />
+      <Dashboard />
       <Solution />
       <Difference />
       <Impression />
@@ -20,6 +24,8 @@ const HomePage = () => {
       <Discover />
       <Features />
       <Result />
+      <Ready />
+      <Footer />
     </div>
   );
 };

@@ -1,41 +1,46 @@
 import { Link } from "react-router-dom";
 const Difference = () => {
   return (
-    <div className="container w-[80%] flex mx-auto my-28">
-      <div className="flex-1">
+    <div className="container grid grid-cols-2 gap-8 p-2 w-[80%] mx-auto my-20 ">
+      <div>
         <p className="text-lightBlue font-bold text-lg">
-          Why should you work with us?
+          Niyə bizimlə birlikdə çalışmalısınız?
         </p>
         <h2 className="text-primary text-4xl w-[70%] font-bold my-8">
-          To upscale your business to the next level
+          Biznesinizi perspektiv planlaşdırma səviyyəsinə yüksəltmək üçün
         </h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, earum.
+        <p className="w-[70%]">
+          Uzun illəri aşan təcrübəmiz sayəsində sizə bizimlə həmkarlıq etməyiniz
+          sizin gələcək inkişaflara müsbət təsir göstərəcək.
         </p>
       </div>
-      <div className="flex-2 flex gap-5 flex-col mt-8">
-        <div className="goToLink flex gap-2 center justify-center">
+      <div className="flex flex-col gap-8 justify-center">
+        <div className="goToLink flex gap-3 items-center">
           <Link>
             <img src="./IconGoTo.svg" alt="" />
           </Link>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, non?
+            <span className="font-bold text-lg"> Sabit paket</span>- başlangıc
+            planını özündə birləşdirir.
           </p>
         </div>
-        <div className="goToLink flex gap-2 center justify-center">
+        <div className="goToLink  flex gap-3 items-center">
           <Link>
             <img src="./IconGoTo.svg" alt="" />
           </Link>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, non?
+            {" "}
+            <span className="font-bold text-lg">Plantinum paket </span>- ən
+            yüksək nəticə üçün istifadəyə uyğundur.
           </p>
         </div>
-        <div className="goToLink flex gap-2 center justify-center">
+        <div className="goToLink flex gap-3 items-center">
           <Link>
             <img src="./IconGoTo.svg" alt="" />
           </Link>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, non?
+            <span className="font-bold text-lg">Standart paket</span>- ən çox
+            seçilən paket olunan paketdir.
           </p>
         </div>
       </div>
