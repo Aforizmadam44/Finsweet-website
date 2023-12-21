@@ -21,7 +21,7 @@ const Impression = () => {
           <Button title={"Ödənişsiz sına"} />
         </div>
         <div>
-          <div className="clientsCard flex justify-center ml-56 mx -auto  text-center p-2 rounded-lg  w-[40%] h-[10%] bg-slate-50 mb-[5%]">
+          <div className="clientsCard flex justify-center mb-4 mx -auto  text-center p-2 rounded-lg  w-[40%] h-[10%] bg-slate-50 mb-[5%]">
             <div className="className flex gap-3 items-center justify-center shrink-0">
               <FaUserFriends className="text-2xl text-softBlue" />
               <div className="shrink-0">
@@ -33,7 +33,7 @@ const Impression = () => {
             </div>
           </div>
           <div className="allCard flex items-center">
-            <div className="impressionCard mr-6 p-4 rounded-lg  gap-3 w-[20%] h-[10%] bg-slate-50 text-center">
+            <div className="impressionCard mr-2 p-4 rounded-lg  gap-3 w-[20%] h-[10%] bg-slate-50 text-center">
               <p className="text-slate-400">Tərəqqi</p>
               <div>
                 <div className="flex items-center justify-center mt-4 gap-2">
@@ -43,43 +43,33 @@ const Impression = () => {
               </div>
             </div>
             <div className="bigCard w-[80%] p-8  flex flex-col items-center justify-center mx-auto bg-slate-50 rounded-lg text-center">
-              <div className="flex gap-8 ">
-                {" "}
-                <img src="./Section.png" alt="" />
-                <img src="./Section(1).png" alt="" />
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <p className="text-3xl font-bold">1.05</p>
-                <p className="text-md">Orta diapazon</p>
-              </div>
-              <div className="flex">
-                <img src="./Section(2).png" alt="" />
-                <img src="./Section(3).png" alt="" />
-              </div>
+              <img src="./Chart.svg" alt="" />
               <div className="flex flex-wrap justify-center items-center gap-4 my-10">
                 <div className="flex items-center justify-center gap-4">
                   <span>
-                    <p className="text-blue text-xl ">%</p>
+                    <p className="text-blue text-xl ">|</p>
                   </span>
-                  <p>11%</p>
+                  <p>
+                    <span className="font-bold">Əmtəə</span>- 31%
+                  </p>
                 </div>
                 <div className="flex items-center justify-center gap-4">
                   <span>
-                    <p className="text-iden1 text-xl">%</p>
+                    <p className="text-iden1 text-xl">|</p>
                   </span>
-                  <p>24%</p>
+                  <p>
+                    <span className="font-bold">Dəyər</span>- 29%
+                  </p>
                 </div>
+
                 <div className="flex items-center justify-center gap-4">
                   <span>
-                    <p className="text-iden2 text-xl">%</p>
+                    <p className="text-iden3 ">|</p>
                   </span>
-                  <p>39%</p>
-                </div>
-                <div className="flex items-center justify-center gap-4">
-                  <span>
-                    <p className="text-iden3 ">%</p>
-                  </span>
-                  <p>26%</p>
+                  <p>
+                    {" "}
+                    <span className="font-bold">Qazanc</span>- 40%
+                  </p>
                 </div>
                 <div className="flex items-center mt-2">
                   <p>
@@ -89,7 +79,7 @@ const Impression = () => {
               </div>
             </div>
 
-            <div className="earningsCard ml-[-10%] shadow-md p-2 flex justify-center items-center gap-4 px-6 rounded-lg  w-[20%] h-[10%] bg-slate-50">
+            <div className="earningsCard ml-[-5%] shadow-md p-2 flex justify-center items-center gap-4 px-6 rounded-lg  w-[20%] h-[10%] bg-slate-50">
               <SlChart />
 
               <div>

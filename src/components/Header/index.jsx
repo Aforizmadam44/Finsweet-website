@@ -19,6 +19,7 @@ const Header = () => {
         />
         <Button
           title={"Ödənişsiz sına"}
+          to={"./freeTrial"}
           className="hover:bg-slate-100 hover:text-slate-100 rounded-xl"
         ></Button>
       </div>

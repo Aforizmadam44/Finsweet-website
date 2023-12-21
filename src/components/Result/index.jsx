@@ -17,7 +17,7 @@ const Result = () => {
   }, []);
 
   return (
-    <div className="container mx-auto w-[100%]">
+    <div className="container mx-auto w-[100%] my-20">
       <p className="text-3xl text-primary text-center font-bold">
         Daha yaxından tanış olun:
       </p>
@@ -27,9 +27,9 @@ const Result = () => {
             key={id}
             className="flex  w-[29.5%] text-center  flex-col gap-8 border-2 p-4 cursor-pointer rounded-lg hover:scale-105 transition-all duration-300"
           >
-            <p className="text-md font-bold">{description}</p>
+            <p className="text-md font-semibold">{description}</p>
             <img src={icon} alt={name} className="mx-auto" />
-            <p className="font-bold">{name}</p>
+            <p className="font-semibold text-lg">{name}</p>
             <p>{job}</p>
           </div>
         ))}

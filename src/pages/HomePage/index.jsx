@@ -10,10 +10,14 @@ import Result from "../../components/Result";
 import Ready from "../../components/Ready";
 import Footer from "../../components/Footer";
 import Dashboard from "../../components/Dashboard";
+import { Helmet } from "react-helmet";
 
 const HomePage = () => {
   return (
     <div className="overflow-hidden">
+      <Helmet>
+        <title>Ana səhifə</title>
+      </Helmet>
       <Navigation />
       <Header />
       <Dashboard />

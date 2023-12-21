@@ -1,14 +1,11 @@
-import { Helmet } from "react-helmet";
-import Footer from "../../components/Footer";
+import React from "react";
 import Navigation from "../../components/Navigation";
 import Ready from "../../components/Ready";
+import Footer from "../../components/Footer";
 
-const Blog = () => {
+const BlogPost = () => {
   return (
     <div>
-      <Helmet>
-        <title>Bloq</title>
-      </Helmet>
       <Navigation />
       <Ready />
       <Footer />
@@ -16,4 +13,5 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default BlogPost;
+t;

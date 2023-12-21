@@ -17,7 +17,7 @@ const Difference = () => {
       <div className="flex flex-col gap-8 justify-center">
         <div className="goToLink flex gap-3 items-center">
           <Link>
-            <img src="./IconGoTo.svg" alt="" />
+            <img src="./standart.svg" alt="" />
           </Link>
           <p>
             <span className="font-bold text-lg"> Sabit paket</span>- başlangıc
@@ -26,7 +26,7 @@ const Difference = () => {
         </div>
         <div className="goToLink  flex gap-3 items-center">
           <Link>
-            <img src="./IconGoTo.svg" alt="" />
+            <img src="./standart.svg" alt="" />
           </Link>
           <p>
             {" "}
@@ -36,7 +36,7 @@ const Difference = () => {
         </div>
         <div className="goToLink flex gap-3 items-center">
           <Link>
-            <img src="./IconGoTo.svg" alt="" />
+            <img src="./standart.svg" alt="" />
           </Link>
           <p>
             <span className="font-bold text-lg">Standart paket</span>- ən çox

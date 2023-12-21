@@ -22,7 +22,8 @@ const Features = () => {
 
   return (
     <>
-      <div className="flex flex-wrap justify-between items-center p-14 bg-rose w-[80%] mx-auto my-16 rounded-xl">
+      <p className="font-bold text-4xl text-center">Xüsusiyyətlər</p>
+      <div className="flex flex-wrap justify-between items-center  my-20 p-14 bg-rose w-[80%] mx-auto  rounded-xl">
         {data.map(({ id, title, icon, description }) => (
           <div key={id} className="w-[25%]">
             <img src={icon} alt="" className="my-6 w-[25%]" />
