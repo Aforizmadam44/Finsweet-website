@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const BrandsSlider = () => {
+const BrandsSlider = ({ className }) => {
   const settings = {
     infinite: true, // Sonsuz döngü etkinleştirildi
     slidesToShow: 5, // Aynı anda görünen SVG sayısı
@@ -12,7 +12,9 @@ const BrandsSlider = () => {
   };
 
   return (
-    <div className="container w-100 mt-5 py-12 align-items-center">
+    <div
+      className={`container w-100 mt-5 py-12 align-items-center ${className}`}
+    >
       <Slider {...settings}>
         <div>
           <img src="./Logo1.png" alt="" />

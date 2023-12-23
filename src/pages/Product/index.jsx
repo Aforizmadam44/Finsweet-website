@@ -4,6 +4,9 @@ import Logos from "../../components/Logos";
 import Features from "../../components/Features";
 import Ready from "../../components/Ready";
 import { Helmet } from "react-helmet";
+import Grow from "../../components/Grow";
+import Service from "../../components/Service";
+import Insights from "../../components/Insights";
 const Product = () => {
   return (
     <div>
@@ -11,7 +14,10 @@ const Product = () => {
         <title>Məhsullar</title>
       </Helmet>
       <Navigation />
-      <Logos />
+      <Grow />
+      <Logos className="my-20" />
+      <Service />
+      <Insights />
       <Features />
       <Ready />
       <Footer />

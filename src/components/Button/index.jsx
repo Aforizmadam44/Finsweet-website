@@ -1,9 +1,11 @@
 import { NavLink } from "react-router-dom";
 
-const Button = ({ title, to }) => {
+const Button = ({ title, to, bg, color }) => {
   return (
     <NavLink to={to}>
-      <button className="bg-primary rounded-2xl p-4 h-16 text-center text-slate-100 hover:bg-slate-50 hover:text-primary hover:border-primary border-2">
+      <button
+        className={`bg-primary ${bg} ${color} rounded-2xl p-4 h-16 text-center  hover:bg-slate-50 hover:text-primary hover:border-primary border-2`}
+      >
         {title}
       </button>
     </NavLink>

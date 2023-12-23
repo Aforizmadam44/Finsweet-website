@@ -1,6 +1,6 @@
 const Discover = () => {
   return (
-    <div className=" grid grid-cols-2 mx-auto w-[80%] my-28 gap-4">
+    <div className=" grid grid-cols-2 mx-auto w-[80%] my-20 gap-4">
       <div className="flex-1">
         <p className="text-lightBlue font-bold text-lg">Daha çox kəşf edin</p>
         <h2 className="text-primary text-4xl w-[70%] font-bold my-8">
