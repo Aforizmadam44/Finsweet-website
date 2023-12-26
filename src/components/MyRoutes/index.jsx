@@ -15,8 +15,8 @@ export const MyRoutes = [
     element: <Product />,
     title: "Məhsullar",
   },
-  { id: 3, path: "/blog", element: <Blog />, title: "Bloq" },
-  { id: 4, path: "/pricing", element: <Pricing />, title: "Qiymətləndirmə" },
+  { id: 3, path: "/pricing", element: <Pricing />, title: "Qiymətləndirmə" },
+  { id: 4, path: "/blog", element: <Blog />, title: "Bloq" },
   { id: 5, path: "/contact", element: <Contact />, title: "Əlaqə" },
   {
     id: 6,

@@ -1,9 +1,19 @@
-import React from "react";
+import DashboardLinks from "../DashboardLinks";
+import DashboardNavbar from "../DashboardNavbar";
+import DashboardCards from "../DashboardCards";
+import DashboardProjects from "../DashboardProjects";
+import DashboardCompanies from "../DashboardCompanies";
 
 const Dashboard = () => {
   return (
-    <div className="container mx-auto flex cursor-pointer justify-center">
-      <img src="./dash.png" alt="" />
+    <div className="w-[80%] border-slate-300 shadow-lg mx-auto p-16 rounded-lg">
+      <DashboardNavbar />
+      <div className="flex justify-evenly">
+        <DashboardLinks />
+        <DashboardCards />
+        <DashboardProjects />
+      </div>
+      <DashboardCompanies />
     </div>
   );
 };

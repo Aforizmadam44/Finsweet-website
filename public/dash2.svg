@@ -1,0 +1,12 @@
+<svg width="180" height="84" viewBox="0 0 180 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 1">
+<path id="Line Chart" d="M1.80151 82.4764L23.0462 70.4865L31.1196 48.6868L42.5917 57.4068L78.7076 37.2421L91.0295 1L110.575 50.8668L139.467 1L147.965 59.8592L159.437 35.0621L178.133 54.6818" stroke="#BD0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Line Chart_2" d="M23.0462 70.4865L1.80151 82.4764H178.133V54.6818L159.437 35.0621L147.965 59.8592L139.467 1L110.575 50.8668L91.0295 1L78.7076 37.2421L42.5917 57.4068L31.1196 48.6868L23.0462 70.4865Z" fill="url(#paint0_linear_5_1078)" fill-opacity="0.3"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_5_1078" x1="89.967" y1="1" x2="89.967" y2="82.4764" gradientUnits="userSpaceOnUse">
+<stop stop-color="#BD0000"/>
+<stop offset="1" stop-color="#BD0000" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

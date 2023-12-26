@@ -7,6 +7,8 @@ import { Helmet } from "react-helmet";
 import Grow from "../../components/Grow";
 import Service from "../../components/Service";
 import Insights from "../../components/Insights";
+import TimeTracker from "../../components/TimeTracker";
+import LeadGeneration from "../../components/LeadGeneration";
 const Product = () => {
   return (
     <div>
@@ -18,6 +20,8 @@ const Product = () => {
       <Logos className="my-20" />
       <Service />
       <Insights />
+      <TimeTracker />
+      <LeadGeneration />
       <Features />
       <Ready />
       <Footer />

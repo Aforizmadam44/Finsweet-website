@@ -1,4 +1,5 @@
 import Button from "../Button";
+import Dashboard from "../Dashboard";
 
 const Grow = () => {
   return (
@@ -20,9 +21,7 @@ const Grow = () => {
           />
         </div>
       </div>
-      <div className="sm:block sm:my-8">
-        <img src="./dash.png" alt="" />
-      </div>
+      <img src="./dash.png" alt="" className="w-[50%]" />
     </div>
   );
 };
