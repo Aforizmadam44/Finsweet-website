@@ -3,7 +3,6 @@ import Footer from "../../components/Footer";
 import Navigation from "../../components/Navigation";
 import Ready from "../../components/Ready";
 import PricingPlan from "../PricingPlan";
-import PlanCards from "../../components/PlanCards";
 import Frequently from "../../components/Frequently";
 
 const Pricing = () => {
@@ -14,7 +13,6 @@ const Pricing = () => {
       </Helmet>
       <Navigation />
       <PricingPlan />
-      <PlanCards />
       <Frequently />
       <Ready />
       <Footer />

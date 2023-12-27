@@ -20,7 +20,7 @@ const Difference = () => {
             <img src="./standart.svg" alt="" />
           </Link>
           <p>
-            <span className="font-bold text-lg"> Sabit paket</span>- başlangıc
+            <span className="font-bold text-lg"> Sabit paket</span>- başlanğıc
             planını özündə birləşdirir.
           </p>
         </div>

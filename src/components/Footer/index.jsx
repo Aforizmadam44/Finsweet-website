@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-3 text-zinc-500 mb-6 sm:mb-0 md:mb-0 lg:mb-0 sm:w-1/4 md:w-1/4 lg:w-1/4">
-          <FooterLink to="/">
+          <FooterLink to="/n">
             <img src="./LogoSvg.svg" alt="" />
           </FooterLink>
           <FooterLink to="/subscribe">Bülletenimizə abunə olun</FooterLink>

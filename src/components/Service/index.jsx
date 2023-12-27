@@ -21,13 +21,12 @@ const Service = () => {
         <h2 className="text-4xl font-bold text-center  ">
           Bizim xidmətlər ilə ən keyfiyyətlisinə sahib olun.
         </h2>
-        <div className="flex flex-wrap mx-auto my-20 w-[80%]">
+        <div className="grid grid-cols-3  mx-auto my-20 w-[80%] p-12">
           {data.map(({ id, icon, description, title }) => (
-            <div key={id} className="w-1/2 my-6 bg-slate-50 p-6 ">
+            <div key={id} className=" my-6  p-6 rounded-xl ">
               <img src={icon} alt={title} />
               <h3 className="text-xl font-bold my-6">{title}</h3>
               <p>{description}</p>
-              {/* Diğer bilgileri de ekleyebilirsiniz */}
             </div>
           ))}
         </div>

@@ -16,13 +16,13 @@ export const MyRoutes = [
     title: "Məhsullar",
   },
   { id: 3, path: "/pricing", element: <Pricing />, title: "Qiymətləndirmə" },
-  { id: 4, path: "/blog", element: <Blog />, title: "Bloq" },
+  { id: 4, path: "/ aboutUs", element: <AboutUs />, title: "Haqqımızda" },
   { id: 5, path: "/contact", element: <Contact />, title: "Əlaqə" },
   {
     id: 6,
-    path: "/aboutUs",
-    element: <AboutUs />,
-    title: "Haqqımızda",
+    path: "/blog",
+    element: <Blog />,
+    title: "Bloq",
   },
   {
     id: 7,

@@ -2,6 +2,10 @@ import { Helmet } from "react-helmet";
 import Footer from "../../components/Footer";
 import Navigation from "../../components/Navigation";
 import Ready from "../../components/Ready";
+import AboutTitle from "../../components/AboutTitle";
+import Goals from "../../components/Goals";
+import Corporate from "../../components/Corporate";
+import Team from "../../components/Team";
 
 const AboutUs = () => {
   return (
@@ -11,6 +15,10 @@ const AboutUs = () => {
         <title>Haqqımızda</title>
       </Helmet>
       <Navigation />
+      <AboutTitle />
+      <Goals />
+      <Corporate />
+      <Team />
       <Ready />
       <Footer />
     </div>

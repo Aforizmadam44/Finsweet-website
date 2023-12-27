@@ -18,7 +18,9 @@ const Frequently = () => {
           {[0, 1, 2, 3].map((index) => (
             <div
               key={index}
-              className="shadow-lg rounded-lg bg-slate-50 p-4 my-4"
+              className={`shadow-lg rounded-lg bg-slate-50 p-4 my-4 ${
+                activeIndex === index ? "h-auto" : "h-16" // Kutu genişlemesi kontrolü
+              }`}
             >
               <div className="flex items-center">
                 <h3 className="text-lg font-semibold mr-2">
@@ -34,7 +36,7 @@ const Frequently = () => {
                 </h3>
                 <button
                   onClick={() => toggle(index)}
-                  className="text-primary text-lg "
+                  className="text-primary text-lg"
                 >
                   {activeIndex === index ? "-" : "+"}
                 </button>
@@ -49,7 +51,7 @@ const Frequently = () => {
                       : index === 2
                       ? "7/24 qaynar xəttimizdən və mail adreslərindən bizimlə əlaqə saxlaya bilərsiniz."
                       : index === 3
-                      ? "Xeyr, ödənişi digər üsullarlarla(nağd, ödəmə aparatları)vasitəsilə də edə bilərsiniz."
+                      ? "Xeyr, ödənişi digər üsullarlarla (nağd, ödəmə aparatları) vasitəsilə də edə bilərsiniz."
                       : ""}
                   </p>
                 </div>
