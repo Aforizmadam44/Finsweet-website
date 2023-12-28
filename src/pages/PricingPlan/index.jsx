@@ -1,5 +1,5 @@
 // PricingPlan.js
-import React, { useState } from "react";
+import { useState } from "react";
 import Button from "../../components/Button";
 import PlanCards from "../../components/PlanCards";
 
