@@ -19,7 +19,7 @@ const Frequently = () => {
             <div
               key={index}
               className={`shadow-lg rounded-lg bg-slate-50 p-4 my-4 ${
-                activeIndex === index ? "h-auto" : "h-16" // Kutu genişlemesi kontrolü
+                activeIndex === index ? "h-auto" : "h-16"
               }`}
             >
               <div className="flex items-center">

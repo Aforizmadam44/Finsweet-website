@@ -37,7 +37,7 @@ const Footer = () => {
 
         <div className="flex flex-col gap-3 text-zinc-500 mb-6 sm:mb-0 md:mb-0 lg:mb-0 sm:w-1/4 md:w-1/4 lg:w-1/4">
           <FooterLink to="/n">
-            <img src="./LogoSvg.svg" alt="" />
+            <img src="../LogoSvg.svg" alt="" />
           </FooterLink>
           <FooterLink to="/subscribe">Bülletenimizə abunə olun</FooterLink>
           <div className="inputAndBtn">
@@ -57,10 +57,14 @@ const Footer = () => {
 
       <div className="flex items-center  sm:flex-row md:flex-row lg:flex-row justify-center gap-4 cursor-pointer mt-6 md:mt-10 lg:mt-10 mb-6 lg:mb-10 text-zinc-500 ">
         <p>© Copyright Finsweet 2023</p>
-        <img src="./Instagram.svg" alt="" className="w-6 h-6 hover:scale-110" />
-        <img src="./Linkedin.svg" alt="" className="w-6 h-6 hover:scale-105" />
-        <img src="./Facebook.svg" alt="" className="w-6 h-6 hover:scale-105" />
-        <img src="./Twitter.svg" alt="" className="w-6 h-6 hover:scale-105" />
+        <img
+          src="../Instagram.svg"
+          alt=""
+          className="w-6 h-6 hover:scale-110"
+        />
+        <img src="../Linkedin.svg" alt="" className="w-6 h-6 hover:scale-105" />
+        <img src="../Facebook.svg" alt="" className="w-6 h-6 hover:scale-105" />
+        <img src="../Twitter.svg" alt="" className="w-6 h-6 hover:scale-105" />
       </div>
     </div>
   );
