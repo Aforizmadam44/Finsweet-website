@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
-import Navigation from "../Navigation";
+import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../Footer";
 import Button from "../Button";
 
@@ -25,7 +25,7 @@ const AllPostDetails = () => {
 
   return (
     <>
-      <Navigation />
+      <Navbar />{" "}
       <div
         key={id}
         className="
