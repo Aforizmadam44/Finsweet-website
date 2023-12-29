@@ -15,7 +15,11 @@ const Impression = () => {
             olmaqla bərabər, inkişaf və gəlir strukturunu da müntəzəm həll etmiş
             olursunuz
           </p>
-          <Button title={"Ödənişsiz sına"} color={"text-slate-50"} />
+          <Button
+            title={"Ödənişsiz sına"}
+            color={"text-slate-50"}
+            to={"/freeTrial"}
+          />
         </div>
         <div>
           <CardsAll />

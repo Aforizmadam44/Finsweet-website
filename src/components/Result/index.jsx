@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Result = () => {
   const url = "http://localhost:3000/result";
@@ -23,15 +24,16 @@ const Result = () => {
       </p>
       <div className="flex  justify-center mx-auto my-6 gap-2">
         {data.map(({ id, description, name, job, icon }) => (
-          <div
+          <NavLink
             key={id}
-            className="flex  w-[29.5%] text-center  flex-col gap-8 border-2 p-4 cursor-pointer rounded-lg hover:scale-105 transition-all duration-300"
+            to={"/aboutUs"}
+            className="flex w-[29.5%] text-center flex-col gap-8 border-2 p-4 cursor-pointer rounded-lg hover:scale-105 transition-all duration-300"
           >
             <p className="text-md font-semibold">{description}</p>
             <img src={icon} alt={name} className="mx-auto" />
-            <p className="font-semibold text-lg">{name}</p>
+            <p className="font-semibold text-xl">{name}</p>
             <p>{job}</p>
-          </div>
+          </NavLink>
         ))}
       </div>
     </div>

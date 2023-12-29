@@ -11,10 +11,9 @@ import Ready from "../../components/Ready";
 import Footer from "../../components/Footer";
 import Dashboard from "../../components/Dashboard";
 import { Helmet } from "react-helmet";
-
 const HomePage = () => {
   return (
-    <div className="dark:bg-primary dark:text-slate-50">
+    <>
       <Helmet>
         <title>Ana səhifə</title>
       </Helmet>
@@ -29,9 +28,8 @@ const HomePage = () => {
       <Features />
       <Result />
       <Ready />
-
       <Footer />
-    </div>
+    </>
   );
 };
 

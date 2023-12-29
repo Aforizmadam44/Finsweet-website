@@ -23,7 +23,7 @@ const Footer = () => {
           <p className="text-slate-50 font-bold text-lg">Resurslar</p>
           <FooterLink to="/terms">Qaydalar və Şərtlər</FooterLink>
           <FooterLink to="/blog">Bloq</FooterLink>
-          <FooterLink to="/contactUs">Əlaqə</FooterLink>
+          <FooterLink to="/aboutUs">Əlaqə</FooterLink>
         </div>
 
         <div className="flex flex-col gap-3 text-zinc-500 mb-6 sm:mb-0 md:mb-0 lg:mb-0 sm:w-1/4 md:w-1/4 lg:w-1/4">
@@ -36,10 +36,10 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-3 text-zinc-500 mb-6 sm:mb-0 md:mb-0 lg:mb-0 sm:w-1/4 md:w-1/4 lg:w-1/4">
-          <FooterLink to="/n">
+          <FooterLink to="/">
             <img src="../LogoSvg.svg" alt="" />
           </FooterLink>
-          <FooterLink to="/subscribe">Bülletenimizə abunə olun</FooterLink>
+          <FooterLink to="/freeTrial">Bülletenimizə abunə olun</FooterLink>
           <div className="inputAndBtn">
             <input
               type="mail"
@@ -50,6 +50,7 @@ const Footer = () => {
               title={"Abunə olun"}
               bg={"bg-slate-50"}
               color={"text-primary"}
+              to={"/freeTrial"}
             />
           </div>
         </div>

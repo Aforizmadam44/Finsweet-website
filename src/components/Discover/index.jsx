@@ -15,7 +15,7 @@ const Discover = () => {
         </p>
       </div>
       <div className="flex flex-col gap-2">
-        <div className="flex items-center justify-center gap-4 my-4">
+        <div className="flex items-center justify-center gap-4 my-4 ">
           <img src="./discoverIcon1.svg" alt="" />
           <div>
             <p className="font-bold text-lg">Satış İzləmə</p>

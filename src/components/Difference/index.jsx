@@ -15,33 +15,42 @@ const Difference = () => {
         </p>
       </div>
       <div className="flex flex-col gap-8 justify-center">
-        <div className="goToLink flex gap-3 items-center">
-          <Link to={""}>
+        <div>
+          <Link
+            to={"/pricing"}
+            className="flex gap-3 items-center hover:scale-105 transition-all duration-500"
+          >
             <img src="./standart.svg" alt="" />
+            <p>
+              <span className="font-bold text-lg"> Sabit paket</span>- başlanğıc
+              planını özündə birləşdirir.
+            </p>
           </Link>
-          <p>
-            <span className="font-bold text-lg"> Sabit paket</span>- başlanğıc
-            planını özündə birləşdirir.
-          </p>
         </div>
-        <div className="goToLink  flex gap-3 items-center">
-          <Link>
+        <div>
+          <Link
+            to={"/pricing"}
+            className="flex gap-3 items-center hover:scale-105 transition-all duration-500"
+          >
             <img src="./standart.svg" alt="" />
+            <p>
+              {" "}
+              <span className="font-bold text-lg">Plantinum paket </span>- ən
+              yüksək nəticə üçün istifadəyə uyğundur.
+            </p>
           </Link>
-          <p>
-            {" "}
-            <span className="font-bold text-lg">Plantinum paket </span>- ən
-            yüksək nəticə üçün istifadəyə uyğundur.
-          </p>
         </div>
-        <div className="goToLink flex gap-3 items-center">
-          <Link>
+        <div>
+          <Link
+            to={"/pricing"}
+            className="flex gap-3 items-center hover:scale-105 transition-all duration-500"
+          >
             <img src="./standart.svg" alt="" />
+            <p>
+              <span className="font-bold text-lg">Standart paket</span>- ən çox
+              seçilən paket olunan paketdir.
+            </p>
           </Link>
-          <p>
-            <span className="font-bold text-lg">Standart paket</span>- ən çox
-            seçilən paket olunan paketdir.
-          </p>
         </div>
       </div>
     </div>
