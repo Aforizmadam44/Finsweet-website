@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import Footer from "../../components/Footer";
-import Navigation from "../../components/Navigation";
+import Navbar from "../../components/Navbar/Navbar";
 import Ready from "../../components/Ready";
 import PricingPlan from "../PricingPlan";
 import Frequently from "../../components/Frequently";
@@ -11,7 +11,7 @@ const Pricing = () => {
       <Helmet>
         <title>Qiymətləndirmə</title>
       </Helmet>
-      <Navigation />
+      <Navbar />
       <PricingPlan />
       <Frequently />
       <Ready />

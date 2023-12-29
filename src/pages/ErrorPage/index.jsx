@@ -1,12 +1,12 @@
 import { Helmet } from "react-helmet";
 import Button from "../../components/Button";
 import Footer from "../../components/Footer";
-import Navigation from "../../components/Navigation";
+import Navbar from "../../components/Navbar/Navbar";
 
 const ErrorPage = () => {
   return (
     <div>
-      <Navigation />
+      <Navbar />
       <Helmet>
         <title>404 Xəta</title>
       </Helmet>

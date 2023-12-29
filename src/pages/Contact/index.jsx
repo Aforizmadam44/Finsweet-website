@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import Footer from "../../components/Footer";
-import Navigation from "../../components/Navigation";
+import Navbar from "../../components/Navbar/Navbar";
 import Ready from "../../components/Ready";
 import DropUs from "../../components/DropUs";
 
@@ -10,7 +10,7 @@ const Contact = () => {
       <Helmet>
         <title>Əlaqə</title>
       </Helmet>
-      <Navigation />
+      <Navbar />
       <DropUs />
       <Ready />
       <Footer />

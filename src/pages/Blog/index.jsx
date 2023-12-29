@@ -1,17 +1,16 @@
 import { Helmet } from "react-helmet";
 import Footer from "../../components/Footer";
-import Navigation from "../../components/Navigation";
 import Ready from "../../components/Ready";
 import LatestBlog from "../../components/LatestBlog";
 import AllPost from "../../components/AllPost";
-
+import Navbar from "../../components/Navbar/Navbar";
 const Blog = () => {
   return (
     <div>
       <Helmet>
         <title>Bloq</title>
       </Helmet>
-      <Navigation />
+      <Navbar />
       <LatestBlog />
       <AllPost />
       <Ready />

@@ -1,11 +1,11 @@
+import CoolPage from "./components/CoolPage";
 import Routing from "./components/Routing";
 
 function App() {
   return (
     <>
-      <div>
-        <Routing />
-      </div>
+      <Routing />
+      <CoolPage />
     </>
   );
 }

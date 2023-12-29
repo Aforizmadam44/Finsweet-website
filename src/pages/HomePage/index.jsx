@@ -1,6 +1,6 @@
 import Solution from "../../components/Solution";
 import Header from "../../components/Header";
-import Navigation from "../../components/Navigation";
+import Navbar from "../../components/Navbar/Navbar";
 import Difference from "../../components/Difference";
 import Impression from "../../components/Impression";
 import Logos from "../../components/Logos";
@@ -14,11 +14,11 @@ import { Helmet } from "react-helmet";
 
 const HomePage = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="dark:bg-primary dark:text-slate-50">
       <Helmet>
         <title>Ana səhifə</title>
       </Helmet>
-      <Navigation />
+      <Navbar />
       <Header />
       <Dashboard />
       <Solution />
@@ -29,6 +29,7 @@ const HomePage = () => {
       <Features />
       <Result />
       <Ready />
+
       <Footer />
     </div>
   );

@@ -1,5 +1,5 @@
 import Footer from "../../components/Footer";
-import Navigation from "../../components/Navigation";
+import Navbar from "../../components/Navbar/Navbar";
 import Logos from "../../components/Logos";
 import Features from "../../components/Features";
 import Ready from "../../components/Ready";
@@ -15,7 +15,7 @@ const Product = () => {
       <Helmet>
         <title>Məhsullar</title>
       </Helmet>
-      <Navigation />
+      <Navbar />
       <Grow />
       <Logos className="my-20" />
       <Service />
