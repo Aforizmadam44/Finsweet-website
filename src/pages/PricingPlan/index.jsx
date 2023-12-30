@@ -11,7 +11,7 @@ const PricingPlan = () => {
   };
 
   return (
-    <div className="flex flex-col items-center gap-4 my-20">
+    <div className="flex flex-col items-center mx-auto text-center gap-4 my-20">
       <p className="text-4xl font-bold">Sizə uyğun qiymət planları</p>
       <p>Aylıq və yaxud illik planlarımızla tanış olun:</p>
       <div className="buttons">

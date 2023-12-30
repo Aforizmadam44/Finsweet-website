@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between p-4 shadow-xl">
+    <nav className="flex justify-between p-6 shadow-xl">
       <div className="container mx-auto flex items-center justify-between">
         <Link
           to={"/"}

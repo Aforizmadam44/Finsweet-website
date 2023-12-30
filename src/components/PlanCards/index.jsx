@@ -18,17 +18,17 @@ const PlanCards = ({ planType }) => {
   }, []);
 
   return (
-    <div className="container columns-3">
+    <div className="container xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md mx-auto xl:grid xl:grid-cols-3 xl:gap-4 lg:grid lg:grid-cols-3 lg:gap-3 md:grid md:grid-cols-2">
       {data.map((plan) => (
         <div
           key={plan.id}
-          className="card flex flex-col gap-4 cursor-pointer shadow-lg p-10 rounded-xl hover:bg-primary hover:text-slate-50 "
+          className="card flex flex-col gap-4 cursor-pointer shadow-lg p-10 rounded-xl hover:bg-primary hover:text-slate-50 xl:w-full lg:w-full md:w-full "
         >
           <div className="flex items-center gap-4">
             <img src={plan.icon} alt={plan.title} className="w-12" />
             <div>
-              <h3 className="text-3xl font-bold">{plan.title}</h3>
-              <p className="text-slate-400">{plan.description}</p>
+              <h3 className="text-xl lg:text-3xl font-bold">{plan.title}</h3>
+              <p className="text-md lg:text-slate-400">{plan.description}</p>
             </div>
           </div>
 
