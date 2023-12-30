@@ -8,13 +8,13 @@ const Frequently = () => {
   };
 
   return (
-    <div className="container my-20">
-      <div className="flex bg-violet p-8 items-center rounded-xl">
-        <div className="flex-1">
+    <div className="container my-28">
+      <div className="lg:grid lg:grid-cols-2 md:block gap-2 bg-violet p-8 items-center rounded-xl">
+        <div>
           <p className="text-4xl font-bold my-4">Tez-tez soruşulan suallar</p>
           <p>Bu bölmədə bizlərə ünvanlanan suallarla tanış ola bilərsiniz.</p>
         </div>
-        <div className="flex-1">
+        <div>
           {[0, 1, 2, 3].map((index) => (
             <div
               key={index}
@@ -36,7 +36,7 @@ const Frequently = () => {
                 </h3>
                 <button
                   onClick={() => toggle(index)}
-                  className="text-primary text-lg"
+                  className=" text-2xl text-lightBlue"
                 >
                   {activeIndex === index ? "-" : "+"}
                 </button>
