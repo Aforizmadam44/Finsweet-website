@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 const Difference = () => {
   return (
-    <div className="container grid grid-cols-2 gap-8 p-2 w-[80%] mx-auto my-20 ">
-      <div>
+    <div className="container xl:grid xl:grid-cols-2 gap-8 p-2 w-[80%] mx-auto md:block md:my-6 ">
+      <div className="my-28 ">
         <p className="text-lightBlue font-bold text-lg">
           Niyə bizimlə birlikdə çalışmalısınız?
         </p>
-        <h2 className="text-primary text-4xl w-[70%] font-bold my-8">
+        <h2 className="text-primary text-4xl w-[70%] font-semibold my-8">
           Biznesinizi perspektiv planlaşdırma səviyyəsinə yüksəltmək üçün
         </h2>
-        <p className="w-[70%]">
+        <p className="w-[70%] text-slate-500">
           Uzun illəri aşan təcrübəmiz sayəsində sizə bizimlə həmkarlıq etməyiniz
           sizin gələcək inkişaflara müsbət təsir göstərəcək.
         </p>
@@ -22,7 +22,7 @@ const Difference = () => {
           >
             <img src="./standart.svg" alt="" />
             <p>
-              <span className="font-bold text-lg"> Sabit paket</span>- başlanğıc
+              <span className="font-bold text-xl"> Sabit paket</span>- başlanğıc
               planını özündə birləşdirir.
             </p>
           </Link>
@@ -35,7 +35,7 @@ const Difference = () => {
             <img src="./standart.svg" alt="" />
             <p>
               {" "}
-              <span className="font-bold text-lg">Plantinum paket </span>- ən
+              <span className="font-bold text-xl">Plantinum paket </span>- ən
               yüksək nəticə üçün istifadəyə uyğundur.
             </p>
           </Link>
@@ -47,7 +47,7 @@ const Difference = () => {
           >
             <img src="./standart.svg" alt="" />
             <p>
-              <span className="font-bold text-lg">Standart paket</span>- ən çox
+              <span className="font-bold text-xl">Standart paket</span>- ən çox
               seçilən paket olunan paketdir.
             </p>
           </Link>

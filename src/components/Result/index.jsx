@@ -18,21 +18,21 @@ const Result = () => {
   }, []);
 
   return (
-    <div className="container mx-auto w-[100%] my-20">
-      <p className="text-3xl text-primary text-center font-bold">
+    <div className="container mx-auto">
+      <p className="text-3xl text-primary text-center font-bold my-20">
         Daha yaxından tanış olun:
       </p>
-      <div className="flex  justify-center mx-auto my-6 gap-2">
+      <div className="xl:flex xl:justify-center lg:flex lg:justify-center lg:space-y-0 md:flex md:justify-center md:space-y-0 mx-auto my-6 gap-2 sm:block sm:space-y-6">
         {data.map(({ id, description, name, job, icon }) => (
           <NavLink
             key={id}
             to={"/aboutUs"}
-            className="flex w-[29.5%] text-center flex-col gap-8 border-2 p-4 cursor-pointer rounded-lg hover:scale-105 transition-all duration-300"
+            className="flex xl:w-[29.5%] md:w-[35%] text-center flex-col gap-4 border-2 p-4 cursor-pointer rounded-lg hover:scale-105 transition-all duration-300 hover:shadow-2xl"
           >
             <p className="text-md font-semibold">{description}</p>
-            <img src={icon} alt={name} className="mx-auto" />
-            <p className="font-semibold text-xl">{name}</p>
-            <p>{job}</p>
+            <img src={icon} alt={name} className="mx-auto mt-4" />
+            <p className="font-bold text-xl">{name}</p>
+            <p className="text-slate-400">{job}</p>
           </NavLink>
         ))}
       </div>

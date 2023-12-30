@@ -13,7 +13,7 @@ const BrandsSlider = ({ className }) => {
 
   return (
     <div
-      className={`container w-100 mt-5 py-12 align-items-center ${className}`}
+      className={`container w-100 my-28 py-12 align-items-center ${className}`}
     >
       <Slider {...settings}>
         <div>
