@@ -2,10 +2,10 @@ import React from "react";
 
 const Goals = () => {
   return (
-    <div className="bg-violet container flex gap-8 py-16">
-      <div className="flex-1 flex flex-col gap-6 ">
-        <p className="text-lg font-bold text-lightBlue">Məqsədlərimiz</p>
-        <p className="text-2xl font-semibold">
+    <div className="bg-violet container xl:grid xl:grid-cols-2 md:grid md:grid-cols-1 gap-8 py-16">
+      <div className="space-y-4 ">
+        <p className="text-xl font-bold text-lightBlue">Məqsədlərimiz</p>
+        <p className="text-3xl font-semibold">
           Biznesinizi ən yüksək səviyyəyə daşımaqı hədəfləyirik
         </p>
         <p>
@@ -14,10 +14,11 @@ const Goals = () => {
           sizə təqdim etmək.
         </p>
       </div>
-      <div className="flex-1 flex flex-col gap-6 ">
-        <p className="text-lg font-bold text-lightBlue">Vizyonumuz</p>
-        <p className="text-2xl font-semibold">
-          Şirkətinizə lazımi həllər təqdim etmək
+      <div className="xl:hidden lg:hidden md:space-y-4 md:block " />
+      <div className="space-y-4 xl:mt-0 sm:mt-4">
+        <p className="text-xl font-bold text-lightBlue">Vizyonumuz</p>
+        <p className="text-3xl font-semibold">
+          Şirkətinizə lazımi həllər təqdim etmək və planlaşdırma
         </p>
 
         <p>

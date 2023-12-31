@@ -13,7 +13,7 @@ const AboutTitle = () => {
           gördüyümüz işlərlə qazandığımız uğurlar keyfiyyətimizdən xəbər verir.{" "}
         </p>
       </div>
-      <div className="flex gap-4 justify-center  ">
+      <div className="grid grid-cols-3 gap-4 justify-center  ">
         <img
           src="./aboutTitle.png"
           alt=""
@@ -32,7 +32,7 @@ const AboutTitle = () => {
       </div>
       <div className="flex flex-col gap-4 items-center my-28">
         <p className="text-lightBlue text-xl font-bold">Haqqımızda</p>
-        <p className="text-4xl font-semibold">
+        <p className="text-4xl font-semibold text-center">
           Biz məlumat analitiklərindən ibarət komandayıq
         </p>
         <p className="w-[70%] text-center my-6">
