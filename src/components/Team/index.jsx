@@ -17,17 +17,17 @@ const Team = () => {
       });
   }, []);
   return (
-    <div className="container grid grid-cols-2 items-center ">
-      <div>
+    <div className="container xl:grid xl:grid-cols-2 items-center sm:block sm:space-y-6">
+      <div className="sm:space-y-4 ">
         <p className="text-4xl font-semibold my-4">Bacarıqlı Komandamız</p>
         <p>Peşəkar komandamız ilə tanış olun.</p>
       </div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2  sm:grid sm:grid-cols-2  gap-4">
         {data.map(
           ({ id, icon, description, title, experience, age, company }) => (
             <div
               key={id}
-              className="rounded-lg bg-violet text-center cursor-pointer hover:scale-110 transition-transform duration-300"
+              className="rounded-lg bg-violet text-center cursor-pointer xl:hover:scale-110 transition-transform duration-300 "
             >
               <figure className="imghvr-zoom-out ">
                 <img src={icon} alt="example-image" />
@@ -36,11 +36,11 @@ const Team = () => {
                     <p className="font-bold">Yaşı:</p>
                     <p className="text-slate-400">{age}</p>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 ">
                     <p className="font-bold">İş vəzifəsi:</p>
                     <p className="text-slate-400">{description}</p>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 ">
                     <p className="font-bold">İş təcrübəsi:</p>
                     <p className="text-slate-400">{experience}</p>
                   </div>
@@ -51,7 +51,6 @@ const Team = () => {
                 </figcaption>
                 <a href="#"></a>
               </figure>
-              {/* <img src={icon} alt={title} /> */}
               <div className="p-4">
                 {" "}
                 <h3 className="text-xl font-bold ">{title}</h3>
