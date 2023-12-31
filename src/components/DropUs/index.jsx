@@ -6,19 +6,17 @@ const DropUs = () => {
         Bizimlə əlaqə saxlayın
       </p>
       <div className="container">
-        <div className="bg-violet rounded-xl grid grid-cols-2 items-center">
+        <div className="bg-violet rounded-xl xl:grid xl:grid-cols-2 md:grid md:grid-cols-1 items-center">
           <form className="">
             <div className="p-12">
               <div className="my-6 space-y-3">
-                <p className="xl:text-4xl font-semibold sm:text-2xl">
-                  Bizə mesaj göndərin
-                </p>
+                <p className="text-4xl font-semibold ">Bizə mesaj göndərin</p>
                 <p className="sm:text-md">
                   Biz ən qısa zamanda sizinlə əlaqə saxlayacağıq.
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+              <div className="xl:grid xl:grid-cols-1 md:grid md:grid-cols-3 gap-x-6 gap-y-8 sm:grid-cols-6">
                 <div className="sm:col-span-3">
                   <div className="mt-2">
                     <input
