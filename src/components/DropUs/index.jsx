@@ -10,8 +10,12 @@ const DropUs = () => {
           <form className="">
             <div className="p-12">
               <div className="my-6 space-y-3">
-                <p className="text-4xl font-semibold">Bizə mesaj göndərin</p>
-                <p>Biz ən qısa zamanda sizinlə əlaqə saxlayacağıq.</p>
+                <p className="xl:text-4xl font-semibold sm:text-2xl">
+                  Bizə mesaj göndərin
+                </p>
+                <p className="sm:text-md">
+                  Biz ən qısa zamanda sizinlə əlaqə saxlayacağıq.
+                </p>
               </div>
 
               <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
@@ -92,7 +96,7 @@ const DropUs = () => {
               </div>
             </div>
           </form>
-          <div className="flex flex-col gap-2 items-center">
+          <div className="flex flex-col gap-2 items-center flex-wrap">
             <div className="flex items-center gap-4 my-6">
               <a href="tel:+994505594199">
                 <img src="./dropUs1.png" alt="" />
