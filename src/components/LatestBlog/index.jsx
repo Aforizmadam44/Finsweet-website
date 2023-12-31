@@ -9,7 +9,7 @@ const LatestBlog = () => {
         </p>
       </div>
       <div className="container border-1  rounded-xl mx-auto  ">
-        <div className=" border-2  p-10 grid grid-cols-2 gap-10 rounded-xl ">
+        <div className=" border-2  p-10 xl:grid xl:grid-cols-2 sm:grid sm:grid-cols-1 gap-10 rounded-xl ">
           <div className="space-y-6">
             <p className="text-xl text-lightBlue font-bold">
               Trend Paylaşımlar

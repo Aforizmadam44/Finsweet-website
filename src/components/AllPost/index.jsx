@@ -22,7 +22,7 @@ const AllPost = () => {
       <p className="text-center text-4xl font-semibold my-28">
         Bütün paylaşımlar
       </p>
-      <div className="container grid grid-cols-3 gap-4">
+      <div className="container xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2 gap-4">
         {data.map(({ id, description, title, icon, author }) => (
           <Link
             key={id}
