@@ -3,6 +3,11 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const AllPost = () => {
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+
+    history.push(`/AllPostDetails`);
+  };
   const url = "http://localhost:3000/ourPost";
   const [data, setData] = useState([]);
 
@@ -28,6 +33,7 @@ const AllPost = () => {
             key={id}
             to={`/AllPostDetails/${id}`}
             className="flex text-center  flex-col space-y-6 border-2 p-4 cursor-pointer rounded-lg hover:scale-105 transition-all duration-300 hover:bg-primary hover:text-slate-50"
+            onClick={handleLinkClick}
           >
             <img src={icon} alt={title} className="mx-auto" />
             <p className="font-semibold text-lg">{title} </p>

@@ -32,9 +32,13 @@ const AllPostDetails = () => {
       container mx-auto flex items-center flex-col space-y-4 my-20"
       >
         <div className="flex flex-col items-center">
-          <img src={plan.iconDetails} alt="" className="shadow-xl rounded-xl" />
+          <p className="text-2xl font-bold my-5 ">{plan.title}</p>
+          <img
+            src={plan.iconDetails}
+            alt=""
+            className="shadow-xl rounded-xl w-[900px] h-[400px] object-cover"
+          />
           <div className="text-center my-10">
-            <p className="text-2xl font-bold my-5 ">{plan.title}</p>
             <div className="border-2 shadow-xl p-8 rounded-xl text-center space-y-4">
               <p>{plan.longDescription}</p>
               <p className="text-slate-400">{plan.author}</p>
