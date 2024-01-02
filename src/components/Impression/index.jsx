@@ -3,6 +3,11 @@ import CardsAll from "../CardsAll";
 import styles from "./style.module.css";
 
 const Impression = () => {
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+
+    history.push("/freeTrial");
+  };
   return (
     <div className={styles.statisticContainer}>
       <div className="w-[80%] xl:grid xl:grid-cols-2 justify-center items-baseline mx-auto py-20 my-20 ">
@@ -19,6 +24,7 @@ const Impression = () => {
             title={"Ödənişsiz sına"}
             color={"text-slate-50"}
             to={"/freeTrial"}
+            onClick={handleLinkClick}
           />
         </div>
         <div>

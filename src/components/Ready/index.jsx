@@ -3,6 +3,16 @@ import Button from "../Button";
 import PlanCards from "../PlanCards";
 
 const Ready = () => {
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+    history.push("/pricing");
+  };
+
+  const handleButtonClick = () => {
+    <PlanCards />;
+    handleLinkClick();
+  };
+
   return (
     <div className="container flex flex-col my-28 text-center">
       <p className="text-4xl font-semibold  mx-auto ">
@@ -30,7 +40,7 @@ const Ready = () => {
         title={"Qiymətləri gör"}
         to={"/pricing"}
         color={"text-slate-50"}
-        onClick={<PlanCards />}
+        onClick={handleButtonClick}
       />
     </div>
   );

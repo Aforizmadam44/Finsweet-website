@@ -5,7 +5,11 @@ import { NavLink } from "react-router-dom";
 const Result = () => {
   const url = "http://localhost:3000/result";
   const [data, setData] = useState([]);
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
 
+    history.push("/aboutUs");
+  };
   useEffect(() => {
     axios
       .get(url)
@@ -28,6 +32,7 @@ const Result = () => {
             key={id}
             to={"/aboutUs"}
             className="flex xl:w-[29.5%] md:w-[35%] text-center flex-col gap-4 border-2 p-4 cursor-pointer rounded-lg hover:scale-105 transition-all duration-300 hover:shadow-2xl"
+            onClick={handleLinkClick}
           >
             <p className="text-md font-semibold">{description}</p>
             <img src={icon} alt={name} className="mx-auto mt-4" />
