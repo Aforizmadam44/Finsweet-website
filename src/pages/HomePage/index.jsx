@@ -11,24 +11,31 @@ import Ready from "../../components/Ready";
 import Footer from "../../components/Footer";
 import Dashboard from "../../components/Dashboard";
 import { Helmet } from "react-helmet";
+import { motion } from "framer-motion";
 const HomePage = () => {
   return (
     <>
-      <Helmet>
-        <title>Ana səhifə</title>
-      </Helmet>
-      <Navbar />
-      <Header />
-      <Dashboard />
-      <Solution />
-      <Difference />
-      <Impression />
-      <Logos />
-      <Discover />
-      <Features />
-      <Result />
-      <Ready />
-      <Footer />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+      >
+        <Helmet>
+          <title>Ana səhifə</title>
+        </Helmet>
+        <Navbar />
+        <Header />
+        <Dashboard />
+        <Solution />
+        <Difference />
+        <Impression />
+        <Logos />
+        <Discover />
+        <Features />
+        <Result />
+        <Ready />
+        <Footer />
+      </motion.div>
     </>
   );
 };

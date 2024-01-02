@@ -9,22 +9,30 @@ import Service from "../../components/Service";
 import Insights from "../../components/Insights";
 import TimeTracker from "../../components/TimeTracker";
 import LeadGeneration from "../../components/LeadGeneration";
+import { motion } from "framer-motion";
+
 const Product = () => {
   return (
     <div>
-      <Helmet>
-        <title>Məhsullar</title>
-      </Helmet>
-      <Navbar />
-      <Grow />
-      <Logos className="my-20" />
-      <Service />
-      <Insights />
-      <TimeTracker />
-      <LeadGeneration />
-      <Features />
-      <Ready />
-      <Footer />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+      >
+        <Helmet>
+          <title>Məhsullar</title>
+        </Helmet>
+        <Navbar />
+        <Grow />
+        <Logos />
+        <Service />
+        <Insights />
+        <TimeTracker />
+        <LeadGeneration />
+        <Features />
+        <Ready />
+        <Footer />
+      </motion.div>
     </div>
   );
 };
