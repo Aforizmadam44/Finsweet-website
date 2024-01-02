@@ -7,6 +7,7 @@ import Pricing from "../../pages/Pricing/index";
 import AboutUs from "../../pages/AboutUs/index";
 import FreeTrial from "../../pages/FreeTrial/index";
 import AllPostDetails from "../AllPostDetails";
+import DiscoverDetails from "../DiscoverDetails";
 
 export const MyRoutes = [
   { id: 1, path: "/", element: <HomePage />, title: "Ana səhifə" },
@@ -36,5 +37,10 @@ export const MyRoutes = [
     element: <FreeTrial />,
     title: "Ödənişsiz sınaq",
   },
-  { id: 9, path: "*", element: <ErrorPage /> },
+  {
+    id: 9,
+    path: "/DiscoverDetails/:id",
+    element: <DiscoverDetails />,
+  },
+  { id: 10, path: "*", element: <ErrorPage /> },
 ];
