@@ -1,5 +1,3 @@
-// Ready.js
-
 import { TypeAnimation } from "react-type-animation";
 import Button from "../Button";
 import PlanCards from "../PlanCards";

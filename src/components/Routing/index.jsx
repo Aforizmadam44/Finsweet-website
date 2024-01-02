@@ -6,7 +6,7 @@ const Routing = () => {
     <>
       <Routes>
         {MyRoutes.map(({ id, path, element }) => {
-          return <Route key={id} path={path} element={element}></Route>;
+          return <Route key={id} path={path} element={element} />;
         })}
       </Routes>
     </>

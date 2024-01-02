@@ -23,6 +23,7 @@ const PlanCards = ({ planType }) => {
         <div
           key={plan.id}
           className="card flex flex-col gap-4 cursor-pointer shadow-lg p-10 rounded-xl hover:bg-primary hover:text-slate-50 xl:w-full lg:w-full md:w-full "
+          onClick={() => console.log(plan.id)}
         >
           <div className="flex items-center gap-4">
             <img src={plan.icon} alt={plan.title} className="w-12" />

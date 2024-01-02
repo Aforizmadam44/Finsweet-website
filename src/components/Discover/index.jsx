@@ -77,7 +77,7 @@ const Discover = () => {
         <div>
           <Link
             to={"/pricing"}
-            className="flex gap-5 items-center hover:scale-105 transition-all duration-500"
+            className="flex gap-5 items-center p-6 hover:scale-105 hover:rounded-xl hover:bg-primary hover:text-white transition-all duration-500"
           >
             <img src="./discoverIcon1.svg" alt="" />
             <div className="space-y-2">
@@ -94,7 +94,7 @@ const Discover = () => {
         <div>
           <Link
             to={"/pricing"}
-            className="flex gap-5 items-center hover:scale-105 transition-all duration-500"
+            className="flex gap-5 p-6 items-center hover:scale-105 hover:rounded-xl hover:bg-primary hover:text-white transition-all duration-500"
           >
             <img src="./discoverIcon2.svg" alt="" />
             <div className="space-y-2">
@@ -110,7 +110,7 @@ const Discover = () => {
         <div>
           <Link
             to={"/pricing"}
-            className="flex gap-5 items-center hover:scale-105 transition-all duration-500"
+            className="flex gap-5 p-6 items-center hover:scale-105 hover:rounded-xl hover:bg-primary hover:text-white transition-all duration-500"
           >
             <img src="./discoverIcon3.svg" alt="" />
             <div className="space-y-2">
