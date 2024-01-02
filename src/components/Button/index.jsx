@@ -5,8 +5,6 @@ const Button = ({ title, to, bg, color, onClick }) => {
     if (onClick) {
       onClick();
     }
-
-    history.push(to);
   };
 
   return (

@@ -1,14 +1,14 @@
 const Insights = () => {
   return (
-    <div className="my-20 w-[80%] mx-auto flex flex-cols-2 items-center justify-between my-20">
+    <div className="w-[80%] gap-16 mx-auto xl:grid xl:grid-cols-2 sm:grid sm:grid-cols-1 sm:space-y-6 items-center justify-between my-28">
       <div className="flex-2 sm:block">
         <p className="text-lightBlue font-bold text-lg">
           Marketinq anlayışları
         </p>
-        <p className="text-4xl font-bold my-6">
+        <p className="text-4xl font-semibold my-6">
           Məlumata əsaslanan müştəri rəyi
         </p>
-        <p className="w-[60%]">
+        <p className="xl:w-[60%] sm:w-full">
           Aparılan araşdırmalar zamanı aşikarlanmışdır ki, müştərilərin bazar
           iqtisadiyyatında müsbət yöndə irəliləməsi üçün labüd addımlar
           sayəsində gəlir indeksi getdikcə artmış, xərclər isə maksimum dərəcədə

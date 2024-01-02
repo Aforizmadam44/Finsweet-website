@@ -2,7 +2,7 @@ import Button from "../Button";
 
 const Grow = () => {
   return (
-    <div className=" mx-auto my-20 gap-4 justify-between   lg:w-[60%] xl:w-[80%] xl:flex ">
+    <div className="xl:grid xl:grid-cols-2 sm:grid sm:grid-cols-1 sm:space-y-6 mx-auto my-20 gap-4 justify-between lg:w-[60%] xl:w-[80%] p-6 ">
       <div className="sm:w-[100%]">
         <h2 className="text-5xl font-bold">
           Satışlarınızı və xidmətlərinizi inkişaf etdirin
@@ -20,7 +20,7 @@ const Grow = () => {
           />
         </div>
       </div>
-      <img src="./dash.png" alt="" className="w-[50%]" />
+      <img src="./dash.png" alt="" className="xl:w-[100%] my-8" />
     </div>
   );
 };

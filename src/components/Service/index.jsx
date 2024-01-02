@@ -21,9 +21,9 @@ const Service = () => {
         <h2 className="text-4xl font-bold text-center  ">
           Bizim xidmətlər ilə ən keyfiyyətlisinə sahib olun.
         </h2>
-        <div className="xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2 sm:grid sm:grid-cols-2  mx-auto my-20 w-[80%] p-12">
+        <div className="xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2 sm:grid sm:grid-cols-2  mx-auto my-20 xl:w-[80%]  p-12">
           {data.map(({ id, icon, description, title }) => (
-            <div key={id} className=" my-6  p-6 rounded-xl ">
+            <div key={id} className=" my-6  p-6 rounded-xl sm:w-full sm:p-0 ">
               <img src={icon} alt={title} />
               <h3 className="text-xl font-bold my-6">{title}</h3>
               <p>{description}</p>
