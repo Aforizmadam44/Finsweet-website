@@ -13,7 +13,7 @@ const AboutTitle = () => {
           gördüyümüz işlərlə qazandığımız uğurlar keyfiyyətimizdən xəbər verir.{" "}
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-4 justify-center  ">
+      <div className="container mx-auto grid grid-cols-3 gap-4 ">
         <img
           src="./aboutTitle.png"
           alt=""

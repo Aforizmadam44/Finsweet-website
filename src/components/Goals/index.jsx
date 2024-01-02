@@ -15,7 +15,7 @@ const Goals = () => {
         </p>
       </div>
       <div className="xl:hidden lg:hidden md:space-y-4 md:block " />
-      <div className="space-y-4 xl:mt-0 sm:mt-4">
+      <div className="space-y-4 xl:mt-0 sm:mt-4 my-6">
         <p className="text-xl font-bold text-lightBlue">Vizyonumuz</p>
         <p className="text-3xl font-semibold">
           Şirkətinizə lazımi həllər təqdim etmək və planlaşdırma
