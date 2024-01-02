@@ -15,7 +15,7 @@ const DashboardCards = () => {
             <p>Itkilər</p>
             <p className="text-lg font-bold">$10K</p>
           </div>
-          <img src="./dash2.svg" alt="" className="w-20" />
+          <img src="./dash2.svg" alt="" className="xl:w-20 sm:w-12" />
         </div>
 
         <div className="p-8 border-slate-100 h-[25%] sm:w-[45%] lg:w-[30%] xl:w-[100%] rounded-md shadow-md flex items-center justify-around gap-4 hover:bg-primary hover:text-slate-50 cursor-pointer">

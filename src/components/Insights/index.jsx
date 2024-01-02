@@ -8,7 +8,7 @@ const Insights = () => {
         <p className="text-4xl font-semibold my-6">
           Məlumata əsaslanan müştəri rəyi
         </p>
-        <p className="xl:w-[60%] sm:w-full">
+        <p className="">
           Aparılan araşdırmalar zamanı aşikarlanmışdır ki, müştərilərin bazar
           iqtisadiyyatında müsbət yöndə irəliləməsi üçün labüd addımlar
           sayəsində gəlir indeksi getdikcə artmış, xərclər isə maksimum dərəcədə

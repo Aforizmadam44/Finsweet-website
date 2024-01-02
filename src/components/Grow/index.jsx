@@ -1,6 +1,11 @@
 import Button from "../Button";
 
 const Grow = () => {
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+
+    history.push("/contact");
+  };
   return (
     <div className="xl:grid xl:grid-cols-2 sm:grid sm:grid-cols-1 sm:space-y-6 mx-auto my-20 gap-4 justify-between lg:w-[60%] xl:w-[80%] p-6 ">
       <div className="sm:w-[100%]">
@@ -15,6 +20,8 @@ const Grow = () => {
           <Button title={"Başlayın"} color={"text-slate-50"} />
           <Button
             title={"Əlaqə yaradın"}
+            to={"/contact"}
+            onClick={handleLinkClick}
             bg={"bg-slate-50"}
             color={"text-primary"}
           />
