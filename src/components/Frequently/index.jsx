@@ -22,8 +22,8 @@ const Frequently = () => {
                 activeIndex === index ? "h-auto" : "h-16"
               }`}
             >
-              <div className="flex items-center">
-                <h3 className="text-lg font-semibold mr-2">
+              <div className="flex items-center transition-all duration-500">
+                <h3 className="text-lg font-semibold mr-2 ">
                   {index === 0
                     ? "Biznesimi necə böyüdərəm?"
                     : index === 1
@@ -42,7 +42,7 @@ const Frequently = () => {
                 </button>
               </div>
               {activeIndex === index && (
-                <div className="mt-2">
+                <div className="mt-2 text-slate-700">
                   <p>
                     {index === 0
                       ? "Biznesinizi peşəkarlara həvalə edərək, professional həll yolları ilə addımlayın."

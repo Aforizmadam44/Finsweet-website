@@ -17,7 +17,12 @@ const Grow = () => {
           əməliyyatlarınızı optimal şəkildə inkişaf etdirin.{" "}
         </p>
         <div className="buttons flex gap-2">
-          <Button title={"Başlayın"} color={"text-slate-50"} />
+          <Button
+            title={"Başlayın"}
+            color={"text-slate-50"}
+            to={"/pricing"}
+            onClick={handleLinkClick}
+          />
           <Button
             title={"Əlaqə yaradın"}
             to={"/contact"}
