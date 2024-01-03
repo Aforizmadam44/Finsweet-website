@@ -11,7 +11,7 @@ const Impression = () => {
   return (
     <div className={styles.statisticContainer}>
       <div className="w-[80%] xl:grid xl:grid-cols-2 justify-center items-baseline mx-auto py-20 my-20 ">
-        <div className="xl:items-start xl:text-left md:text-center  md:flex md:flex-col md:items-center md:my-8">
+        <div className="xl:items-start xl:text-left md:text-center  md:flex md:flex-col md:items-center  md:my-8">
           <h2 className="text-primary text-4xl font-semibold my-6">
             Daha çox nümayiş, daha çox dönüşüm
           </h2>

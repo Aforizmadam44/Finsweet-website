@@ -29,13 +29,9 @@ const DiscoverDetails = () => {
         {detail && (
           <div className="flex flex-col items-center" key={id}>
             <p className="text-2xl font-bold my-5 ">{detail.title}</p>
-            <img
-              src={detail.longIcon}
-              alt=""
-              className="shadow-xl rounded-xl"
-            />
+            <img src={detail.longIcon} alt="" className="" />
             <div className="text-center my-10">
-              <div className="border-2 shadow-xl p-8 rounded-xl text-center space-y-4">
+              <div className=" rounded-xl shadow-xl p-8 text-center space-y-4">
                 <p>{detail.longDescription}</p>
               </div>
             </div>

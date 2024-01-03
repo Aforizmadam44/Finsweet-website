@@ -30,13 +30,13 @@ const Solution = () => {
           Biznesiniz üçün optimal həllərə sahibik.
         </h3>
       </div>
-      <div className="container flex justify-between items-center flex-wrap p-14 bg-violet  rounded-xl w-[80%] mx-auto">
+      <div className="container flex justify-between items-center text-center flex-wrap p-14 bg-violet  rounded-xl w-[80%] mx-auto">
         {data.map(({ id, title, icon, description }) => (
           <div
             key={id}
             className="xl:w-[25%] lg:w-[45%] md:w-[35%] xl:flex xl:flex-col xl:items-baseline sm:items-center sm:my-8"
           >
-            <img src={icon} alt="" className="my-6 w-[25%] " />
+            <img src={icon} alt="" className="my-6 w-[25%] mx-auto " />
             <p className="my-4 text-primary text-2xl font-bold">{title} </p>
             <p>{description}</p>
           </div>

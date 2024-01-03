@@ -1,8 +1,6 @@
-import React from "react";
-
 const BigCard = () => {
   return (
-    <div className="bigCard w-[80%] p-8 flex flex-col items-center justify-center mx-auto bg-slate-50 rounded-lg text-center">
+    <div className="bigCard w-full sm:w-[80%] xl:p-12 p-16 mt-8 sm:mt-0 flex flex-col items-center justify-center mx-auto bg-slate-50 rounded-lg text-center">
       <img src="./Chart.svg" alt="" />
       <div className="flex flex-wrap justify-center items-center gap-4 my-10">
         <div className="flex items-center justify-center gap-4">
@@ -30,7 +28,7 @@ const BigCard = () => {
             <span className="font-bold">Qazanc</span>- 40%
           </p>
         </div>
-        <div className="flex items-center mt-2">
+        <div className=" items-center mt-2 hidden md:flex">
           <p>Finsweet müştəri dəstəyindən ən yaxşı şəkildə yararlanın</p>
         </div>
       </div>

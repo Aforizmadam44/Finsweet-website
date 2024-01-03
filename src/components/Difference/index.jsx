@@ -12,9 +12,9 @@ const Difference = () => {
     history.push("/pricing");
   };
   return (
-    <div className="container xl:grid xl:grid-cols-2 gap-8 p-2 w-[80%] mx-auto md:block md:my-6">
+    <div className="container xl:grid xl:grid-cols-2 gap-8 p-2 w-[80%] mx-auto justify-center items-center md:block md:my-6">
       <div className="my-28">
-        <p className="text-lightBlue font-bold text-lg">
+        <p className="text-lightBlue font-bold text-lg ">
           Niyə bizimlə birlikdə çalışmalısınız?
         </p>
         <h2 className="text-primary text-4xl w-[70%] font-semibold my-8">
@@ -25,11 +25,11 @@ const Difference = () => {
           sizin gələcək inkişaflara müsbət təsir göstərəcək.
         </p>
       </div>
-      <div className="flex flex-col gap-8 justify-center">
+      <div className="flex flex-col gap-8 justify-center items-center">
         <div>
           <Link
             to={"/pricing"}
-            className="flex gap-3 items-center hover:rounded-xl hover:scale-105 hover:bg-primary p-6 hover:text-white  transition-all duration-500"
+            className="flex gap-3 items-center  hover:rounded-xl hover:scale-105 hover:bg-primary p-6 hover:text-white  transition-all duration-500"
             onClick={handleLinkClick}
           >
             <TbPackages className="text-5xl" />

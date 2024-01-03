@@ -29,7 +29,7 @@ const Header = () => {
         <input
           type="email"
           placeholder="E-poçtunuzu daxil edin"
-          className="border-slate-300 rounded-2xl my-6 w-96 h-16"
+          className="border-slate-300 rounded-2xl my-6 xl:w-96 h-16 sm:w-80"
           value={email}
           onChange={handleInputChange}
         />
