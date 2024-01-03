@@ -6,7 +6,7 @@ import DashboardCompanies from "../DashboardCompanies";
 
 const Dashboard = () => {
   return (
-    <div className="w-[80%] border-slate-300 shadow-lg mx-auto p-16 rounded-lg">
+    <div className=" sm:block  border-2  container  xl:w-[80%] lg:w-[60%] hidden border-slate-300 shadow-lg mx-auto p-8 rounded-xl">
       <DashboardNavbar />
       <div className="flex justify-evenly">
         <DashboardLinks />

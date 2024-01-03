@@ -9,7 +9,7 @@ import { FaMobileScreenButton } from "react-icons/fa6";
 const DashboardCompanies = () => {
   return (
     <>
-      <table className="min-w-full divide-y divide-gray-200">
+      <table className="min-w-full divide-y divide-gray-200 border-t-2">
         <thead className="bg-gray-50 text-2xl">
           <tr>
             <th
