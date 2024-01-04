@@ -16,6 +16,7 @@ const FreeTrial = () => {
           <title>Ödənişsiz sına</title>
         </Helmet>
         <Navbar />
+
         <FreeTrialTitle />
         <Ready />
         <Footer />

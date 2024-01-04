@@ -21,7 +21,7 @@ const DashboardNavbar = () => {
           </div>
           <div>
             <div className="flex gap-4 items-center text-lg cursor-pointer">
-              <NavLink className="flex items-center gap-4">
+              <NavLink className="flex items-center gap-4" to={"/signIn"}>
                 <FaUser className="text-xl" />
                 <p className="font-bold">Daxil olun</p>
               </NavLink>

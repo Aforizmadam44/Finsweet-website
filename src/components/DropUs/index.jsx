@@ -3,6 +3,12 @@ import { useState } from "react";
 const DropUs = () => {
   const [formMessage, setFormMessage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [isBlank, setIsBlank] = useState(true);
+
+  const handleInputChange = (event) => {
+    setIsBlank(event.target.value === "");
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -28,7 +34,7 @@ const DropUs = () => {
     } catch (error) {
       setIsLoading(false);
       console.error("Error!", error.message);
-      setFormMessage("Xəta baş verdi, mesaj göndərilmə");
+      setFormMessage("Xəta baş verdi, mesaj göndərilmədi.");
     }
   };
 
@@ -59,6 +65,7 @@ const DropUs = () => {
                       type="text"
                       name="Adınız"
                       id="first-name"
+                      onChange={handleInputChange}
                       required
                       autoComplete="given-name"
                       placeholder="Ad"
@@ -129,7 +136,7 @@ const DropUs = () => {
                     ></textarea>
                     <button
                       disabled={isLoading}
-                      className="bg-primary text-slate-50 p-5 rounded-xl w-full my-6"
+                      className="bg-primary disabled:opacity-60 text-slate-50 p-5 rounded-xl w-full my-6"
                     >
                       {isLoading
                         ? "Xahiş olunur, gözləyin,göndərilir..."

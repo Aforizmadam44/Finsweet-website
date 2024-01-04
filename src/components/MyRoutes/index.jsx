@@ -8,6 +8,8 @@ import AboutUs from "../../pages/AboutUs/index";
 import FreeTrial from "../../pages/FreeTrial/index";
 import AllPostDetails from "../AllPostDetails";
 import DiscoverDetails from "../DiscoverDetails";
+import SignIn from "../SignIn";
+import SignUp from "../SignUp";
 
 export const MyRoutes = [
   { id: 1, path: "/", element: <HomePage />, title: "Ana səhifə" },
@@ -39,8 +41,18 @@ export const MyRoutes = [
   },
   {
     id: 9,
+    path: "/signIn",
+    element: <SignIn />,
+  },
+  {
+    id: 10,
+    path: "/signUp",
+    element: <SignUp />,
+  },
+  {
+    id: 11,
     path: "/DiscoverDetails/:id",
     element: <DiscoverDetails />,
   },
-  { id: 10, path: "*", element: <ErrorPage /> },
+  { id: 11, path: "*", element: <ErrorPage /> },
 ];
