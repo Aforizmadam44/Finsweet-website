@@ -1,3 +1,5 @@
+import CardsFirst from "../CardsFirst";
+
 const Insights = () => {
   return (
     <div className="w-[80%] gap-16 mx-auto xl:grid xl:grid-cols-2 sm:grid sm:grid-cols-1 sm:space-y-6 items-center justify-between my-28">
@@ -15,8 +17,8 @@ const Insights = () => {
           azalmışdır.
         </p>
       </div>
-      <div className="flex-2 shadow-xl rounded-xl p-6 sm:block">
-        <img src="./frame2.png" alt="" />
+      <div className="shadow-xl rounded-xl p-8  ">
+        <CardsFirst />
       </div>
     </div>
   );

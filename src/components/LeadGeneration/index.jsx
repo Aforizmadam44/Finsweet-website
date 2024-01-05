@@ -1,4 +1,4 @@
-import CardsAll from "../CardsAll";
+import CardThird from "../CardThird";
 
 const LeadGeneration = () => {
   return (
@@ -14,7 +14,7 @@ const LeadGeneration = () => {
         </p>
       </div>
       <div className="shadow-2xl rounded-xl p-6">
-        <CardsAll />
+        <CardThird />
       </div>
     </div>
   );
