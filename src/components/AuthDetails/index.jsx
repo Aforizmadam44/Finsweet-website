@@ -2,6 +2,10 @@ import { useEffect, useState } from "react";
 import { auth } from "../../firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 
+import Trial from "../../pages/Trial";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer";
+
 const AuthDetails = () => {
   const [authUser, setAuthUser] = useState(null);
   useEffect(() => {
@@ -26,17 +30,31 @@ const AuthDetails = () => {
       });
   };
   return (
-    <div className="my-4 text-slate-500">
-      {authUser ? (
-        <>
-          {" "}
-          <p>{`Giriş edilib ${authUser.email} e-poçt ünvanı ilə .`}</p>
-          <button onClick={userSignOut}>Çıxış edin</button>
-        </>
-      ) : (
-        <p>Hesabınıza daxil olmamısınız.</p>
-      )}
-    </div>
+    <>
+      <Navbar />
+      <div className="w-full my-20  text-center flex flex-col items-center gap-2 ">
+        {authUser ? (
+          <>
+            {" "}
+            <div className="flex items-center gap-2 text-xl">
+              <span>Salam hörmətli istifadəçi,</span>{" "}
+              <p className=" text-orange-600">{authUser.email}</p>
+              <p>e-poçt ünvanı ilə giriş etdiyiniz üçün təşəkkür edirik.</p>
+            </div>
+            <div className="flex items-center ">
+              <p>Hesabınızdan çıxmaq istəyirsinizsə,</p>
+              <button onClick={userSignOut} className="text-softBlue mx-1">
+                buraya
+              </button>{" "}
+              <span> klikləyin.</span>
+            </div>
+          </>
+        ) : (
+          <Trial />
+        )}
+      </div>
+      <Footer />
+    </>
   );
 };
 

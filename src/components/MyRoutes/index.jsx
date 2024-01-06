@@ -10,6 +10,7 @@ import AllPostDetails from "../AllPostDetails";
 import DiscoverDetails from "../DiscoverDetails";
 import SignIn from "../SignIn";
 import SignUp from "../SignUp";
+import AuthDetails from "../AuthDetails";
 
 export const MyRoutes = [
   { id: 1, path: "/", element: <HomePage />, title: "Ana səhifə" },
@@ -54,5 +55,10 @@ export const MyRoutes = [
     path: "/DiscoverDetails/:id",
     element: <DiscoverDetails />,
   },
-  { id: 11, path: "*", element: <ErrorPage /> },
+  {
+    id: 12,
+    path: "/authDetails",
+    element: <AuthDetails />,
+  },
+  { id: 13, path: "*", element: <ErrorPage /> },
 ];

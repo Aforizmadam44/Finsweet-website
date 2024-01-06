@@ -1,26 +1,33 @@
 import { useState } from "react";
 import { auth } from "../..//firebase";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import Footer from "../Footer";
 import Navbar from "../Navbar/Navbar";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa6";
+
 const SignUp = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isSeen, setIsSeen] = useState(false);
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
-  const handleSignUp = (e) => {
+  const handleSignUp = async (e) => {
     e.preventDefault();
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        console.log(userCredential);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    try {
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      console.log(userCredential);
+      navigate("/signIn");
+    } catch (error) {
+      console.error(error);
+      alert("Bu hesab ilə qeydiyyatdan keçmisiniz artıq.");
+    }
     const validatePassword = (password) => {
       const passwordRegex = /^.{8,}$/;
       return passwordRegex.test(password);
@@ -69,7 +76,7 @@ const SignUp = () => {
               <input
                 type="text"
                 id="name"
-                placeholder="İsmail"
+                placeholder="Filankəs"
                 className="w-full p-2 border-slate-300 rounded-md focus:outline-none focus:border-blue-500"
               />
             </div>
@@ -83,7 +90,7 @@ const SignUp = () => {
               <input
                 type="text"
                 id="fullName"
-                placeholder="Huseynov"
+                placeholder="Filankəsov"
                 className="w-full p-2 border-slate-300 rounded-md focus:outline-none focus:border-blue-500"
               />
             </div>
@@ -141,6 +148,7 @@ const SignUp = () => {
           >
             Qeydiyyatdan keçin
           </button>
+
           <div className="flex justify-between items-center my-4">
             <span className="text-slate-400">Hesabınız var?</span>{" "}
             <NavLink to="/signIn" className="text-softBlue">

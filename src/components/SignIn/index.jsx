@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { auth } from "../..//firebase";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa6";
@@ -9,12 +9,12 @@ import Footer from "../Footer";
 import Navbar from "../Navbar/Navbar";
 
 const SignIn = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const [isSeen, setIsSeen] = useState(false);
-
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
@@ -25,7 +25,7 @@ const SignIn = () => {
     return passwordRegex.test(password);
   };
 
-  const handleSignIn = (e) => {
+  const handleSignIn = async (e) => {
     e.preventDefault();
 
     if (!validateEmail(email)) {
@@ -42,7 +42,18 @@ const SignIn = () => {
       setPasswordError("");
     }
 
-    signInWithEmailAndPassword(auth, email, password)
+    try {
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      console.log(userCredential);
+      navigate("/authDetails");
+    } catch (error) {
+      console.error(error);
+    }
+    (auth, email, password)
       .then((userCredential) => {
         console.log(userCredential);
       })
@@ -101,12 +112,12 @@ const SignIn = () => {
                 onChange={(e) => setPassword(e.target.value)}
               />
               {isSeen ? (
-                <FaEyeSlash
+                <FaEye
                   className="absolute right-4 cursor-pointer"
                   onClick={togglePasswordVisibility}
                 />
               ) : (
-                <FaEye
+                <FaEyeSlash
                   className="absolute right-4 cursor-pointer"
                   onClick={togglePasswordVisibility}
                 />
