@@ -65,7 +65,7 @@ const Footer = () => {
               title={"Abunə olun"}
               bg={"bg-slate-50"}
               color={"text-primary"}
-              to={ValidEmail(email) ? "freeTrial" : "/"}
+              to={ValidEmail(email) ? "freeTrial" : ""}
               className={`hover:bg-slate-100 hover:text-slate-100 rounded-xl ${
                 email.trim() === "" && "cursor-not-allowed"
               }`}

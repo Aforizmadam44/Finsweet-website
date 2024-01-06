@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Swal from "sweetalert2";
 
 const DropUs = () => {
   const [formMessage, setFormMessage] = useState(null);
@@ -26,8 +27,13 @@ const DropUs = () => {
         setFormMessage("Təşəkkür edirik, sizin mesajınız bizə göndərildi.");
 
         window.location.reload();
-
-        alert("Təşəkkür edirik, sizin mesajınız bizə göndərildi.");
+        Swal.fire({
+          position: "top",
+          icon: "success",
+          title: "Təşəkkür edirik, sizin mesajınız bizə göndərildi.",
+          showConfirmButton: false,
+          timer: 5000,
+        });
       } else {
         throw new Error("Xəta baş verdi, mesaj göndərilmədi.");
       }
@@ -136,10 +142,10 @@ const DropUs = () => {
                     ></textarea>
                     <button
                       disabled={isLoading}
-                      className="bg-primary disabled:opacity-60 text-slate-50 p-5 rounded-xl w-full my-6"
+                      className="bg-primary disabled:bg-softBlue text-slate-50 p-5 rounded-xl w-full my-6"
                     >
                       {isLoading
-                        ? "Xahiş olunur, gözləyin,göndərilir..."
+                        ? "Xahiş olunur, gözləyin, göndərilir..."
                         : "Göndərin"}
                     </button>
                   </div>

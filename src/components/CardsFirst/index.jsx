@@ -12,8 +12,8 @@ const CardsFirst = () => {
         className="w-[50%] h-[30%] object-contain"
       />
       <p>Nəaliyyət göstəricilərini izləyin:</p>
-      <div className="border-t-2 my-3 xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 w-full items-center justify-center gap-4">
-        <div className="hover:skew-x-6 transition-all cursor-pointer duration-500 text-center p-4 rounded-lg bg-slate-50 shadow-md">
+      <div className="border-t-2 my-3 xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 gap-4">
+        <div className="my-3 lg:my-0 hover:skew-x-6 transition-all cursor-pointer duration-500 text-center p-4  bg-slate-50 shadow-xl rounded-xl">
           <p className="text-slate-400">
             <span className="text-primary font-semibold">27.7%</span>
             <br /> Məmnuniyyət
@@ -23,7 +23,7 @@ const CardsFirst = () => {
           </div>
         </div>
 
-        <div className="flex-1 shadow-xl p-4 hover:-skew-x-6 transition-all duration-500 cursor-pointer rounded-lg gap-3 bg-slate-50 text-center">
+        <div className="flex-1 p-4 my-3 lg:my-0 hover:-skew-x-6 transition-all duration-500 cursor-pointer shadow-xl rounded-xl gap-3 bg-slate-50 text-center">
           <p className="text-slate-400">
             <span className="text-primary font-semibold">28.4%</span>
             <br /> Məhsuldarlıq
@@ -33,7 +33,7 @@ const CardsFirst = () => {
           </div>
         </div>
 
-        <div className="flex-1 shadow-xl p-4 hover:skew-x-6  transition-all duration-500 cursor-pointer rounded-lg gap-3 bg-slate-50 text-center">
+        <div className="flex-1 p-4 my-3 lg:my-0 hover:skew-x-6  transition-all duration-500 cursor-pointer shadow-xl rounded-xl gap-3 bg-slate-50 text-center">
           <p className="text-slate-400">
             <span className="text-primary font-semibold">34.7%</span>
             <br /> Qazanc
@@ -43,7 +43,7 @@ const CardsFirst = () => {
           </div>
         </div>
 
-        <div className="flex-1 earningsCard hover:-skew-x-6  transition-all duration-500 cursor-pointer shadow-md gap-4 p-4 rounded-lg bg-slate-50 text-center">
+        <div className="flex-1 earningsCard my-3 lg:my-0 hover:-skew-x-6  transition-all duration-500 cursor-pointer shadow-xl  rounded-xl gap-4 p-4 bg-slate-50 text-center">
           <div>
             <p className="text-slate-400 ">
               <span className="text-primary font-semibold">9.2%</span>
