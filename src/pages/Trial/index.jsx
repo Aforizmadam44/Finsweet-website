@@ -4,7 +4,7 @@ import Ready from "../../components/Ready";
 import FreeTrialTitle from "../../components/FreeTrialTitle";
 import Navbar from "../../components/Navbar/Navbar";
 import { motion } from "framer-motion";
-const FreeTrial = () => {
+const Trial = () => {
   return (
     <div>
       <motion.div
@@ -13,10 +13,9 @@ const FreeTrial = () => {
         transition={{ duration: 2 }}
       >
         <Helmet>
-          <title>Ödənişsiz sına</title>
+          <title>Sifariş et</title>
         </Helmet>
         <Navbar />
-
         <FreeTrialTitle />
         <Ready />
         <Footer />
@@ -25,4 +24,4 @@ const FreeTrial = () => {
   );
 };
 
-export default FreeTrial;
+export default Trial;

@@ -5,7 +5,7 @@ import Contact from "../../pages/Contact/index";
 import Blog from "../../pages/Blog/index";
 import Pricing from "../../pages/Pricing/index";
 import AboutUs from "../../pages/AboutUs/index";
-import FreeTrial from "../../pages/FreeTrial/index";
+import Trial from "../../pages/Trial/index";
 import AllPostDetails from "../AllPostDetails";
 import DiscoverDetails from "../DiscoverDetails";
 import SignIn from "../SignIn";
@@ -35,9 +35,9 @@ export const MyRoutes = [
   },
   {
     id: 8,
-    path: "/freeTrial",
-    element: <FreeTrial />,
-    title: "Ödənişsiz sınaq",
+    path: "/trial",
+    element: <Trial />,
+    title: "Sifariş et ",
   },
   {
     id: 9,
