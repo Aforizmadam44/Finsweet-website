@@ -66,6 +66,7 @@ const PlanCards = ({ planType }) => {
               title={"Başlayın"}
               color={"text-slate-50"}
               className="hover:bg-slate-50 hover:text-primary"
+              to={"/authDetails"}
             />
           </div>
         </div>
