@@ -63,7 +63,6 @@ const SignIn = () => {
   };
   return (
     <>
-      np
       <div className="flex items-center justify-center h-screen">
         <form
           className="bg-white p-28 shadow-xl rounded-xl"

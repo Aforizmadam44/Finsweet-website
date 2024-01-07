@@ -3,8 +3,7 @@ import { auth } from "../../firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { GiAbstract072, GiAbstract016, GiPlatform } from "react-icons/gi";
 import Trial from "../../pages/Trial";
-import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer";
+
 import Button from "../Button";
 import { NavLink } from "react-router-dom";
 
@@ -60,8 +59,7 @@ const AuthDetails = () => {
   };
   return (
     <>
-      <Navbar />
-      <div className="w-full  text-center flex flex-col items-center gap-2 ">
+      <div className="w-full text-center flex flex-col items-center gap-2 ">
         {authUser ? (
           <>
             <div className="my-20 flex flex-col items-center container">
@@ -78,123 +76,135 @@ const AuthDetails = () => {
                 <span> klikləyin.</span>
               </div>
             </div>
-            <p className="text-2xl font-semibold my-4 w-[30%]">
-              Sifariş əməliyyatlarını tamamlamaq üçün xahiş olunur ki,
-              mərhələləri izləyin.
-            </p>
-            <div className="shadow-2xl w-[80%] rounded-lg p-8 ">
-              <p className="text-softBlue text-xl my-6">
-                Sizə uyğun paketi seçin:
+            {showInputs ? (
+              <p className="text-2xl font-semibold my-4 w-[30%]">
+                Ödəmə əməliyyatlarını yerinə yetirin.
               </p>
-              <div className="grid grid-cols-1 xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2 container  items-center gap-3">
-                <div className="border-2 my-2 flex items-center gap-6 transition-all duration-500 hover:bg-primary hover:text-white p-4 rounded-xl shadow-xl">
-                  <NavLink
-                    className="flex items-center justify-center gap-2"
-                    onClick={() => handlePackageSelection("sabit")}
-                  >
-                    <div>
-                      <div className="flex items-center justify-center gap-2 border-b-2 mb-6 ">
-                        <span>
-                          {" "}
-                          <GiAbstract016 className="text-lime-400" />
-                        </span>
-                        <p className="text-lg font-semibold ">
-                          Başlanğıc paket
+            ) : (
+              <p className="text-2xl font-semibold my-4 w-[30%]">
+                Sifariş əməliyyatlarını tamamlamaq üçün xahiş olunur ki,
+                mərhələləri izləyin.
+              </p>
+            )}
+
+            {showInputs || (
+              <div className="shadow-2xl w-[80%] rounded-lg p-8 ">
+                <p className="text-softBlue text-xl my-6">
+                  Sizə uyğun paketi seçin:
+                </p>
+                <div className="grid grid-cols-1 xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2 container  items-center gap-3">
+                  <div className="border-2 my-2 flex items-center gap-6 transition-all duration-500 hover:bg-primary hover:text-white p-4 rounded-xl shadow-xl">
+                    <NavLink
+                      className="flex items-center justify-center gap-2"
+                      onClick={() => handlePackageSelection("sabit")}
+                    >
+                      <div>
+                        <div className="flex items-center justify-center gap-2 border-b-2 mb-6 ">
+                          <span>
+                            {" "}
+                            <GiAbstract016 className="text-lime-400" />
+                          </span>
+                          <p className="text-lg font-semibold ">
+                            Başlanğıc paket
+                          </p>
+                          <span className="font-thin text-slate-400">
+                            (ödənişsiz)
+                          </span>
+                        </div>
+                        <p>
+                          Ilkin əməliyyatlarını özündə birləşdirir.
+                          <br />
+                          <span className="text-gray-500">
+                            (reklam və marketinq təməllərinə yiyələnmə,
+                            bildirişlərin idarəsi və s.).
+                          </span>
                         </p>
-                        <span className="font-thin text-slate-400">
-                          (ödənişsiz)
-                        </span>
                       </div>
-                      <p>
-                        Ilkin əməliyyatlarını özündə birləşdirir.
-                        <br />
-                        <span className="text-gray-500">
-                          (reklam və marketinq təməllərinə yiyələnmə,
-                          bildirişlərin idarəsi və s.).
-                        </span>
-                      </p>
-                    </div>
-                  </NavLink>
-                </div>
+                    </NavLink>
+                  </div>
 
-                <div className="border-2 my-2 flex items-center gap-4 transition-all duration-500 hover:bg-primary hover:text-white p-4 rounded-xl shadow-xl">
-                  <NavLink
-                    className="flex items-center justify-center gap-2"
-                    onClick={() => handlePackageSelection("platinium")}
+                  <div className="border-2 my-2 flex items-center gap-4 transition-all duration-500 hover:bg-primary hover:text-white p-4 rounded-xl shadow-xl">
+                    <NavLink
+                      className="flex items-center justify-center gap-2"
+                      onClick={() => handlePackageSelection("platinium")}
+                    >
+                      <div>
+                        <div className="flex items-center justify-center gap-2 border-b-2 mb-6">
+                          <span className="text-sky-950">
+                            <GiPlatform className="text-cyan-300" />
+                          </span>
+                          <p className="text-xl font-semibold">
+                            Platinium paket
+                          </p>
+                          <span className="font-thin text-md text-slate-400">
+                            (59$)
+                          </span>
+                        </div>
+                        <p>
+                          Istənilən sayda əməliyyatlara imkan verir.
+                          <br />
+                          <span className="text-gray-500">
+                            (səhmlərin kontrolu, tam biznes dəstəyi,
+                            problemlərin köklü həlli və s.).
+                          </span>
+                        </p>
+                      </div>
+                    </NavLink>
+                  </div>
+
+                  <div className="border-2 flex items-center gap-4 transition-all duration-500 hover:bg-primary hover:text-white p-4 rounded-xl shadow-xl">
+                    <NavLink
+                      className="flex items-center justify-center gap-2"
+                      onClick={() => handlePackageSelection("standart")}
+                    >
+                      <div>
+                        <div className="flex items-center justify-center gap-2 border-b-2 mb-6">
+                          <span className="text-sky-950">
+                            <GiAbstract072 className="text-green-500" />
+                          </span>
+                          <p className="text-xl font-semibold">
+                            Standart paket
+                          </p>
+                          <span className="font-thin text-md text-slate-400">
+                            (39$)
+                          </span>
+                        </div>
+                        <p>
+                          Əməliyyatların qismi öhdəlik yaradır.
+                          <br />
+                          <span className="text-gray-500">
+                            (istiqamət müəyyənləşdirmə, bazanın əsaslı təşkili,
+                            öhdəliklərə cavab və s.).
+                          </span>
+                        </p>
+                      </div>
+                    </NavLink>
+                  </div>
+                </div>
+                <div className="flex my-6 items-center justify-around">
+                  <p>Xidmət müddəti:</p>
+                  <select
+                    name=""
+                    id=""
+                    className="h-10 text-center rounded-lg"
+                    onChange={handleDurationSelection}
                   >
-                    <div>
-                      <div className="flex items-center justify-center gap-2 border-b-2 mb-6">
-                        <span className="text-sky-950">
-                          <GiPlatform className="text-cyan-300" />
-                        </span>
-                        <p className="text-xl font-semibold">Platinium paket</p>
-                        <span className="font-thin text-md text-slate-400">
-                          (59$)
-                        </span>
-                      </div>
-                      <p>
-                        Istənilən sayda əməliyyatlara imkan verir.
-                        <br />
-                        <span className="text-gray-500">
-                          (səhmlərin kontrolu, tam biznes dəstəyi, problemlərin
-                          köklü həlli və s.).
-                        </span>
-                      </p>
-                    </div>
-                  </NavLink>
+                    <option value="3">3 ay</option>
+                    <option value="6">6 ay</option>
+                    <option value="9">9 ay</option>
+                    <option value="12">12 ay</option>
+                  </select>
                 </div>
 
-                <div className="border-2 flex items-center gap-4 transition-all duration-500 hover:bg-primary hover:text-white p-4 rounded-xl shadow-xl">
-                  <NavLink
-                    className="flex items-center justify-center gap-2"
-                    onClick={() => handlePackageSelection("standart")}
-                  >
-                    <div>
-                      <div className="flex items-center justify-center gap-2 border-b-2 mb-6">
-                        <span className="text-sky-950">
-                          <GiAbstract072 className="text-green-500" />
-                        </span>
-                        <p className="text-xl font-semibold">Standart paket</p>
-                        <span className="font-thin text-md text-slate-400">
-                          (39$)
-                        </span>
-                      </div>
-                      <p>
-                        Əməliyyatların qismi öhdəlik yaradır.
-                        <br />
-                        <span className="text-gray-500">
-                          (istiqamət müəyyənləşdirmə, bazanın əsaslı təşkili,
-                          öhdəliklərə cavab və s.).
-                        </span>
-                      </p>
-                    </div>
-                  </NavLink>
-                </div>
+                <Button
+                  title="Ödəmə hissəsinə keç"
+                  color={"text-white"}
+                  onClick={handlePayment}
+                />
               </div>
-              <div className="flex my-6 items-center justify-around">
-                <p>Xidmət müddəti:</p>
-                <select
-                  name=""
-                  id=""
-                  className="h-10 text-center rounded-lg"
-                  onChange={handleDurationSelection}
-                >
-                  <option value="3">3 ay</option>
-                  <option value="6">6 ay</option>
-                  <option value="9">9 ay</option>
-                  <option value="12">12 ay</option>
-                </select>
-              </div>
-
-              <Button
-                title="Ödəmə hissəsinə keç"
-                color={"text-white"}
-                onClick={handlePayment}
-              />
-            </div>
-
+            )}
             {showInputs && (
-              <div className="my-8 flex flex-col items-center shadow-xl rounded-xl p-4">
+              <div className="my-8 flex flex-col items-center shadow-xl rounded-xl p-8">
                 <div className="flex gap-2">
                   <div className="flex flex-col items-start">
                     <label htmlFor="name">Adınız</label>
@@ -248,6 +258,17 @@ const AuthDetails = () => {
                   <p>Ümumi ödənəcək məbləğ:</p>
                   <p className="border-b-2">{calculateTotalAmount()}$</p>
                 </div>
+                <div className="flex justify-between items-center w-full">
+                  <button
+                    className="bg-primary rounded-lg p-2 text-white hover:bg-white border-2 hover:border-primary hover:text-primary
+                "
+                  >
+                    Ödəməni tamamla
+                  </button>
+                  <NavLink to={"/trial"} className="text-softBlue">
+                    Geri qayıt
+                  </NavLink>
+                </div>
               </div>
             )}
           </>
@@ -255,7 +276,6 @@ const AuthDetails = () => {
           <Trial />
         )}
       </div>
-      <Footer />
     </>
   );
 };
