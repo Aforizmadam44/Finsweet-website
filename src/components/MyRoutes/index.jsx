@@ -60,5 +60,6 @@ export const MyRoutes = [
     path: "/authDetails",
     element: <AuthDetails />,
   },
+
   { id: 13, path: "*", element: <ErrorPage /> },
 ];

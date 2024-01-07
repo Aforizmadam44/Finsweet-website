@@ -76,7 +76,7 @@ const SignUp = () => {
               <input
                 type="text"
                 id="name"
-                placeholder="Filankəs"
+                placeholder="İsmail"
                 className="w-full p-2 border-slate-300 rounded-md focus:outline-none focus:border-blue-500"
               />
             </div>
@@ -90,7 +90,7 @@ const SignUp = () => {
               <input
                 type="text"
                 id="fullName"
-                placeholder="Filankəsov"
+                placeholder="Huseynov"
                 className="w-full p-2 border-slate-300 rounded-md focus:outline-none focus:border-blue-500"
               />
             </div>
