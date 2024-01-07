@@ -5,9 +5,6 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa6";
 
-import Footer from "../Footer";
-import Navbar from "../Navbar/Navbar";
-
 const SignIn = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
@@ -66,8 +63,7 @@ const SignIn = () => {
   };
   return (
     <>
-      <Navbar />
-
+      np
       <div className="flex items-center justify-center h-screen">
         <form
           className="bg-white p-28 shadow-xl rounded-xl"
@@ -142,8 +138,6 @@ const SignIn = () => {
           </div>
         </form>
       </div>
-
-      <Footer />
     </>
   );
 };
