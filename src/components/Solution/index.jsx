@@ -38,7 +38,7 @@ const Solution = () => {
           >
             <img src={icon} alt="" className="my-6 w-[25%] mx-auto " />
             <p className="my-4 text-primary text-2xl font-bold">{title} </p>
-            <p>{description}</p>
+            <p className="text-slate-500">{description}</p>
           </div>
         ))}
       </div>

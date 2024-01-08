@@ -18,11 +18,13 @@ const CardsAll = () => {
         </div>
       </div>
       <div className="allCard flex items-center  relative ">
-        <div className="impressionCard md:flex hidden absolute sm:left-[-10%] left-0  mr-2 p-4 hover:scale-105 transition-all duration-500 cursor-pointer rounded-lg gap-3 w-[30%] h-[20%] shadow-lg bg-slate-50 text-center">
-          <p className="text-slate-400">Tərəqqi</p>
+        <div className="impressionCard md:flex hidden absolute sm:left-[-10%] left-0  mr-2 p-4 hover:scale-105 transition-all duration-500 cursor-pointer rounded-lg gap-3 w-[25%] h-[20%] shadow-lg bg-slate-50 text-center">
+          <div>
+            <p className="text-slate-400">Tərəqqi</p>
+            <p className="text-lg font-bold">32K</p>
+          </div>
           <div className="flex items-center justify-center mt-4 gap-2">
             <TfiPieChart className="text-softBlue text-4xl" />
-            <p className="text-lg font-bold">32K</p>
           </div>
         </div>
         <BigCard />

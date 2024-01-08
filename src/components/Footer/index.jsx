@@ -36,7 +36,7 @@ const Footer = () => {
           <p className="text-slate-50 font-bold text-lg">Resurslar</p>
           <FooterLink to="/terms">Qaydalar və Şərtlər</FooterLink>
           <FooterLink to="/blog">Bloq</FooterLink>
-          <FooterLink to="/aboutUs">Əlaqə</FooterLink>
+          <FooterLink to="/contact">Əlaqə</FooterLink>
         </div>
 
         <div className="flex flex-col gap-3 text-zinc-500 mb-6 sm:mb-0 md:mb-0 lg:mb-0 sm:w-1/4 md:w-1/4 lg:w-1/4">
@@ -52,7 +52,7 @@ const Footer = () => {
           <FooterLink to="/">
             <img src="../LogoSvg.svg" alt="" />
           </FooterLink>
-          <FooterLink to="/freeTrial">Bülletenimizə abunə olun</FooterLink>
+          <FooterLink to="/trial">Bülletenimizə abunə olun</FooterLink>
           <div className="inputAndBtn">
             <input
               type="mail"
@@ -65,7 +65,7 @@ const Footer = () => {
               title={"Abunə olun"}
               bg={"bg-slate-50"}
               color={"text-primary"}
-              to={ValidEmail(email) ? "freeTrial" : ""}
+              to={ValidEmail(email) ? "trial" : ""}
               className={`hover:bg-slate-100 hover:text-slate-100 rounded-xl ${
                 email.trim() === "" && "cursor-not-allowed"
               }`}

@@ -21,9 +21,9 @@ const Impression = () => {
             olursunuz
           </p>
           <Button
-            title={"Ödənişsiz sına"}
+            title={"Indi sınayın"}
             color={"text-slate-50"}
-            to={"/freeTrial"}
+            to={"/trial"}
             onClick={handleLinkClick}
           />
         </div>

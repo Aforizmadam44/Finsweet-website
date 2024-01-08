@@ -51,7 +51,7 @@ const Navbar = () => {
 
         {isOpen && (
           <div
-            className={`lg:hidden absolute top-16 left-0 right-0 bg-white px-12 space-y-2 text-lg`}
+            className={`lg:hidden absolute top-16 left-2 right-0 bg-white px-12 space-y-2 text-lg`}
           >
             {MyRoutes.map(({ id, path, title }) => {
               return (

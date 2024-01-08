@@ -38,17 +38,15 @@ const DashboardNavbar = () => {
           {open && (
             <div className="lg:hidden absolute top-6 left-[-3%] flex flex-col gap-6 w-full bg-white text-primary pt-6 text-lg">
               <div className="flex flex-col gap-4 cursor-pointer">
-                <NavLink className="flex items-center gap-4 ">
+                <NavLink className="flex items-center gap-4" to={"/signIn"}>
                   <FaUser className="text-xl" />
                   <p className="font-bold">Daxil olun</p>
                 </NavLink>
                 <NavLink className="flex items-center gap-4">
                   <IoIosSettings className="text-xl" />
-                  <p className="font-bold">Tənzimləmələr</p>
                 </NavLink>
                 <NavLink className="flex items-center gap-4">
                   <IoMdNotifications className="text-xl" />
-                  <p className="font-bold">Bildirişlər</p>
                 </NavLink>
               </div>
             </div>

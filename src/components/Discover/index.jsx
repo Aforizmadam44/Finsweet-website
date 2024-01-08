@@ -30,7 +30,7 @@ const Discover = () => {
         <h2 className="text-primary text-4xl w-[70%] font-semibold my-8 md:w-[100%]">
           Satış və marketinq potensialınızı təhlil edin.
         </h2>
-        <p className="w-[70%] md:w-[100%]">
+        <p className="w-[70%] md:w-[100%] text-slate-500">
           Satış prosesinin düzgün qurulması hər bir şirkətin uğurunun əsasını
           təşkil edir. Satışın effektiv təşkili üçün işçilərin (satıcıların)
           məhsulu dərindən bilmələri ilə yanaşı, həm də müştərilərin tanımaq,

@@ -15,9 +15,9 @@ const Trial = () => {
         <Helmet>
           <title>Sifariş et</title>
         </Helmet>
-
         <Navbar />
         <FreeTrialTitle />
+
         <Ready />
         <Footer />
       </motion.div>

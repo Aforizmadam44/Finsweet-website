@@ -22,9 +22,9 @@ const Result = () => {
   }, []);
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto my-28">
       <p className="text-3xl text-primary text-center font-bold my-20">
-        Daha yaxından tanış olun:
+        Əməkdaşlarımızla qısaca tanış olun:
       </p>
       <div className="xl:flex xl:justify-center lg:flex lg:justify-center lg:space-y-0 md:flex md:justify-center md:space-y-0 mx-auto my-6 gap-2 sm:block sm:space-y-6">
         {data.map(({ id, description, name, job, icon }) => (

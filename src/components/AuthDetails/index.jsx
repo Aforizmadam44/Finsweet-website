@@ -3,16 +3,33 @@ import { auth } from "../../firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { GiAbstract072, GiAbstract016, GiPlatform } from "react-icons/gi";
 import Trial from "../../pages/Trial";
+import { useNavigate } from "react-router-dom";
 
 import Button from "../Button";
 import { NavLink } from "react-router-dom";
+import Footer from "../Footer";
+import Navbar from "../Navbar/Navbar";
+import Swal from "sweetalert2";
 
 const AuthDetails = () => {
   const [authUser, setAuthUser] = useState(null);
   const [selectedPackage, setSelectedPackage] = useState(null);
   const [selectedDuration, setSelectedDuration] = useState(3);
   const [showInputs, setShowInputs] = useState(false);
+  const [paymentComplete, setPaymentComplete] = useState(false);
+  const navigate = useNavigate();
 
+  const paymentControl = () => {
+    Swal.fire({
+      title: "Təşəkkür edirik.!",
+      text: "Ödəməniz tamamlandı və bizə çatdırıldı.!",
+      icon: "success",
+      timer: 3000,
+    });
+
+    paymentComplete(true);
+    navigate.push("/trial");
+  };
   useEffect(() => {
     const listen = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -30,6 +47,7 @@ const AuthDetails = () => {
     signOut(auth)
       .then(() => {
         console.log("Çıxış edilib");
+        window.location.href = "/trial";
       })
       .catch((err) => {
         console.log(err);
@@ -59,6 +77,7 @@ const AuthDetails = () => {
   };
   return (
     <>
+      <Navbar />
       <div className="w-full text-center flex flex-col items-center gap-2 ">
         {authUser ? (
           <>
@@ -205,70 +224,111 @@ const AuthDetails = () => {
             )}
             {showInputs && (
               <div className="my-8 flex flex-col items-center shadow-xl rounded-xl p-8">
-                <div className="flex gap-2">
-                  <div className="flex flex-col items-start">
-                    <label htmlFor="name">Adınız</label>
+                <form action="">
+                  <div className="flex gap-2  border-b-2">
+                    <div className="flex flex-col items-start">
+                      <label htmlFor="name">Adınız</label>
+                      <input
+                        type="text"
+                        id="name"
+                        placeholder="İsmail"
+                        maxLength={16}
+                        className="my-2 p-2 rounded-lg"
+                        required
+                      />
+                    </div>
+                    <div className="flex flex-col items-start">
+                      <label htmlFor="surName">Soyadınız</label>
+                      <input
+                        type="text"
+                        placeholder="Huseynov"
+                        maxLength={16}
+                        id="surName"
+                        className="my-2 p-2 rounded-lg"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-start w-full">
+                    <label htmlFor="cartNumber">Kart Nömrəsi</label>
                     <input
                       type="text"
-                      id="name"
-                      placeholder="İsmail"
-                      className="my-2 p-2 rounded-lg"
+                      id="cartNumber"
+                      maxLength={16}
+                      placeholder="1234 5678 9101 1123"
+                      className="my-2 p-2 w-full rounded-lg"
                     />
                   </div>
-                  <div className="flex flex-col items-start">
-                    <label htmlFor="surName">Soyadınız</label>
+                  <div className="flex  justify-between border-b-2">
+                    <div className="flex flex-col items-start">
+                      <label htmlFor="exp" className="">
+                        Son ist. tarixi
+                      </label>
+                      <div className="flex items-center">
+                        <input
+                          type="text"
+                          id="exp"
+                          required
+                          maxLength={2}
+                          placeholder="01"
+                          className="my-2 p-2 rounded-lg w-10"
+                        />
+                        /
+                        <input
+                          type="text"
+                          id="exp"
+                          required
+                          maxLength={2}
+                          placeholder="26"
+                          className="my-2 p-2 rounded-lg w-10"
+                        />
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-start">
+                      <label htmlFor="cvv">Cvc</label>
+                      <input
+                        type="text"
+                        id="cvv"
+                        placeholder="123"
+                        maxLength={3}
+                        className="my-2 p-2 rounded-lg w-14"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-6">
+                    <label htmlFor="address">Ünvan:</label>
                     <input
                       type="text"
-                      placeholder="Huseynov"
-                      id="surName"
+                      id="address"
+                      placeholder="Ünvanınızı qeyd edin"
+                      maxLength={30}
                       className="my-2 p-2 rounded-lg"
+                      required
                     />
                   </div>
-                </div>
-                <div className="flex flex-col items-start w-full">
-                  <label htmlFor="cartNumber">Kart Nömrəsi</label>
-                  <input
-                    type="text"
-                    id="cartNumber"
-                    placeholder="1234 5678 9101 1123"
-                    className="my-2 p-2 w-full rounded-lg"
-                  />
-                </div>
-                <div className="flex gap-2 border-b-2">
-                  <div className="flex flex-col items-start">
-                    <label htmlFor="exp">Son istifadə tarixi</label>
-                    <input
-                      type="text"
-                      id="exp"
-                      placeholder="01/26"
-                      className="my-2 p-2 rounded-lg"
-                    />
+                  <div className="my-6 flex items-center justify-between gap-2">
+                    <p>Ümumi ödənəcək məbləğ:</p>
+                    <p className="border-b-2">{calculateTotalAmount()}$</p>
                   </div>
-                  <div className="flex flex-col items-start">
-                    <label htmlFor="cvv">Cvc</label>
-                    <input
-                      type="text"
-                      id="cvv"
-                      placeholder="123"
-                      className="my-2 p-2 rounded-lg"
-                    />
-                  </div>
-                </div>
-                <div className="my-6 flex items-center justify-between gap-2">
-                  <p>Ümumi ödənəcək məbləğ:</p>
-                  <p className="border-b-2">{calculateTotalAmount()}$</p>
-                </div>
-                <div className="flex justify-between items-center w-full">
-                  <button
-                    className="bg-primary rounded-lg p-2 text-white hover:bg-white border-2 hover:border-primary hover:text-primary
+                  <div className="flex justify-between items-center w-full">
+                    <button
+                      type="submit"
+                      onClick={paymentControl}
+                      disabled={paymentComplete}
+                      className="bg-primary rounded-lg p-2 text-white hover:bg-white border-2 hover:border-primary hover:text-primary
+                      
                 "
-                  >
-                    Ödəməni tamamla
-                  </button>
-                  <NavLink to={"/trial"} className="text-softBlue">
-                    Geri qayıt
-                  </NavLink>
-                </div>
+                    >
+                      {paymentComplete
+                        ? "Ödəmə tamamlanır gözləyin..."
+                        : "Ödəməni tamamla"}
+                    </button>
+                    <NavLink to={"/trial"} className="text-softBlue">
+                      Ləğv et
+                    </NavLink>
+                  </div>
+                </form>
               </div>
             )}
           </>
@@ -276,6 +336,7 @@ const AuthDetails = () => {
           <Trial />
         )}
       </div>
+      <Footer />
     </>
   );
 };

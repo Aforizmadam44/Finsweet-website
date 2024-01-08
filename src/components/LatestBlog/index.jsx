@@ -18,12 +18,12 @@ const LatestBlog = () => {
               Ödənişinizi daha sürətli almağınıza kömək edəcək yeni faktura
               xüsusiyyətləri
             </p>
-            <p className="text-slate-400">
+            <p className="text-slate-800">
               Son bir neçə ay ərzində biz Hesab-fakturaya bir neçə yeni funksiya
               əlavə etdik ki, bu da istənilən biznesin daha sürətli ödəniş
               almasına və yığım işlərinin sürətləndirilməsinə kömək edəcək.
             </p>
-            <p className="text-slate-600">Luke Matthews l Noyabr 8, 2021</p>
+            <p className="text-slate-400">Luke Matthews l Noyabr 8, 2021</p>
           </div>
           <div>
             <img
