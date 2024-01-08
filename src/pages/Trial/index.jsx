@@ -17,7 +17,6 @@ const Trial = () => {
         </Helmet>
         <Navbar />
         <FreeTrialTitle />
-
         <Ready />
         <Footer />
       </motion.div>

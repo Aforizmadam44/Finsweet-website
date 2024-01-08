@@ -34,7 +34,7 @@ const Header = () => {
           onChange={handleInputChange}
         />
         <Button
-          title={"Ödənişsiz sına"}
+          title={"İndi sınayın"}
           color={"text-slate-50"}
           className={`hover:bg-slate-100 hover:text-slate-100 rounded-xl ${
             email.trim() === "" && "cursor-not-allowed"
@@ -46,7 +46,7 @@ const Header = () => {
               setIsEmailValid(false);
             }
           }}
-          to={isValidEmail(email) ? "freeTrial" : ""}
+          to={isValidEmail(email) ? "/trial" : ""}
         ></Button>
         <p className={`text-red-700 ${isEmailValid ? "hidden" : "block"}`}>
           Zəhmət olmasa, düzgün e-poçt adresi qeyd edin.

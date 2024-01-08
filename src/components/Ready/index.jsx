@@ -37,7 +37,7 @@ const Ready = () => {
       />
 
       <Button
-        title={"Qiymətləri gör"}
+        title={"Qiymətləri görün"}
         to={"/pricing"}
         color={"text-slate-50"}
         onClick={handleButtonClick}
