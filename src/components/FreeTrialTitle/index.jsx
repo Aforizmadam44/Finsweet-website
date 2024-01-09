@@ -86,33 +86,75 @@ const FreeTrialTitle = () => {
             </div>
           </div>
         </div>
-        <div className="my-10 bg-violet p-6 rounded-xl shadow-xl flex flex-col items-center">
-          <p className="text-xl font-semibold">Sosyal medyada biz:</p>
-          <div className="grid grid-cols-2 xl:grid xl:grid-cols-4 gap-6 justify-center">
-            <div className="flex justify-center items-center flex-col">
-              <div className="flex">
-                <div className="flex flex-col items-center mx-4">
-                  <FaInstagramSquare className="w-6 h-6 hover:scale-110 text-primary" />
-                  <p>Instagram</p>
-                </div>
-                <div className="flex flex-col items-center mx-4">
-                  <GrLinkedin className="w-6 h-6 hover:scale-105 text-primary" />
-                  <p>Linkedin</p>
-                </div>
-                <div className="flex flex-col items-center mx-4">
-                  <FaFacebookSquare className="w-6 h-6 hover:scale-105 text-primary" />
-                  <p>Facebook</p>
-                </div>
-                <div className="flex flex-col items-center mx-4">
-                  <FaTwitterSquare className="w-6 h-6 hover:scale-105 text-primary" />
-                  <p>Twitter</p>
-                </div>
-                <div className="flex flex-col items-center mx-4">
-                  <FaSquareWhatsapp className="w-6 h-6 hover:scale-105 text-primary" />
-                  <p>Whatsapp</p>
-                </div>
-              </div>
-            </div>
+        <div className="my-10 bg-violet p-8 rounded-xl shadow-xl flex flex-col items-center text-center">
+          <div className="my-10">
+            <p className="text-2xl font-semibold ">Sosyal medyada biz:</p>
+            <p className="text-slate-500">
+              Bizləri izləməyi və bildirişlərdən xəbərdar olmağı unutmayın.{" "}
+            </p>
+          </div>
+          <div className="w-full grid grid-cols-1  lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-5 gap-6 justify-center items-center">
+            <Link
+              to={"https://www.instagram.com/finsweet"}
+              className="  flex
+                  flex-col
+                  items-center
+             "
+            >
+              <FaInstagramSquare className="w-6 h-6 hover:scale-110 text-primary" />
+              <p className="text-sm text-slate-500">
+                https://www.instagram.com/finsweet
+              </p>
+            </Link>
+            <Link
+              to={"https://www.linkedin.com/finsweet"}
+              className="  flex
+                  flex-col
+                  items-center
+                "
+            >
+              <GrLinkedin className="w-6 h-6 hover:scale-105 text-primary" />
+              <p className="text-sm text-slate-500">
+                https://www.linkedin.com/finsweet
+              </p>
+            </Link>
+            <Link
+              to={"https://www.facebook.com/finsweet"}
+              className="  flex
+                  flex-col
+                  items-center
+               "
+            >
+              <FaFacebookSquare className="w-6 h-6 hover:scale-105 text-primary" />
+              <p className="text-sm text-slate-500">
+                https://www.facebook.com/finsweet
+              </p>
+            </Link>
+            <Link
+              to={"https://www.twitter.com/finsweet"}
+              className="  flex
+                  flex-col
+                  items-center
+             "
+            >
+              {" "}
+              <FaTwitterSquare className="w-6 h-6 hover:scale-105 text-primary" />
+              <p className="text-sm text-slate-500">
+                https://www.twitter.com/finsweet
+              </p>
+            </Link>
+            <Link
+              to={"https://www.whatsapp.com/finsweet"}
+              className="flex
+                  flex-col
+                  items-center
+                "
+            >
+              <FaSquareWhatsapp className="w-6 h-6 hover:scale-105 text-primary" />
+              <p className="text-sm text-slate-500">
+                https://www.whatsapp.com/finsweet
+              </p>
+            </Link>
           </div>
         </div>
       </div>
