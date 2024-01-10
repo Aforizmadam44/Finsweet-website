@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Button from "../Button";
+import { NavLink } from "react-router-dom";
 
 const PlanCards = ({ planType }) => {
   const url = "http://localhost:3000/planCards";
@@ -13,7 +14,7 @@ const PlanCards = ({ planType }) => {
         setData(response.data);
       })
       .catch((error) => {
-        console.error("Veri çekme hatası:", error);
+        console.error("Error:", error);
       });
   }, []);
 
@@ -62,11 +63,12 @@ const PlanCards = ({ planType }) => {
               {planType === "monthly" ? plan.price : plan.priceYear}
             </p>
             <p className="text-xs text-slate-400">{plan.when}</p>
+
             <Button
-              title={"Başlayın"}
-              color={"text-slate-50"}
+              title="Başlayın"
+              color="text-slate-50"
               className="hover:bg-slate-50 hover:text-primary"
-              to={"/authDetails"}
+              to={"/trial"}
             />
           </div>
         </div>

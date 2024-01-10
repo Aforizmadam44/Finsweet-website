@@ -5,6 +5,7 @@ import Ready from "../../components/Ready";
 import PricingPlan from "../PricingPlan";
 import Frequently from "../../components/Frequently";
 import { motion } from "framer-motion";
+
 const Pricing = () => {
   return (
     <div>

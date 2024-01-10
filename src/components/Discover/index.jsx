@@ -24,13 +24,13 @@ const Discover = () => {
   }, []);
 
   return (
-    <div className="container xl:grid xl:grid-cols-2 items-center gap-8 p-2 w-[80%] mx-auto md:block md:my-6">
+    <div className="container xl:grid xl:grid-cols-2 gap-8 p-2 w-[80%] mx-auto justify-center items-center md:block md:my-6">
       <div className="my-20 lg:flex lg:flex-col lg:items-center xl:items-start">
         <p className="text-lightBlue font-bold text-xl">Daha çox kəşf edin.</p>
-        <h2 className="text-primary text-4xl w-[70%] font-semibold my-8 md:w-[100%]">
+        <h2 className="text-primary text-4xl w-full md:w-[70%] font-semibold my-8 ">
           Satış və marketinq potensialınızı təhlil edin.
         </h2>
-        <p className="w-[70%] md:w-[100%] text-slate-500">
+        <p className="w-full md:w-[70%] text-slate-500">
           Satış prosesinin düzgün qurulması hər bir şirkətin uğurunun əsasını
           təşkil edir. Satışın effektiv təşkili üçün işçilərin (satıcıların)
           məhsulu dərindən bilmələri ilə yanaşı, həm də müştərilərin tanımaq,
@@ -43,7 +43,7 @@ const Discover = () => {
           <Link
             to={`/DiscoverDetails/${id}`}
             key={id}
-            className="flex gap-5 items-center p-6 hover:scale-105 hover:rounded-xl hover:bg-primary hover:text-white transition-all duration-500"
+            className="flex gap-5 items-center py-6 px-2 hover:scale-105 hover:rounded-xl hover:bg-primary hover:text-white transition-all duration-500"
             onClick={handleLinkClick}
           >
             {icon && <img src={icon} alt={title} />}

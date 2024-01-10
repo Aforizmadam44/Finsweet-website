@@ -29,7 +29,7 @@ const Difference = () => {
         <div>
           <Link
             to={"/pricing"}
-            className="flex gap-3 items-center  hover:rounded-xl hover:scale-105 hover:bg-primary p-6 hover:text-white  transition-all duration-500"
+            className="flex gap-3 items-center  hover:rounded-xl hover:scale-105 hover:bg-primary py-6 hover:text-white  transition-all duration-500"
             onClick={handleLinkClick}
           >
             <TbPackages className="text-5xl" />
@@ -44,7 +44,7 @@ const Difference = () => {
         <div>
           <Link
             to={"/aboutUs"}
-            className="flex gap-3 items-center hover:rounded-xl hover:scale-105 hover:bg-primary p-6 hover:text-white  transition-all duration-500"
+            className="flex gap-3 items-center hover:rounded-xl hover:scale-105 hover:bg-primary py-6 hover:text-white  transition-all duration-500"
           >
             <HiMiniUserGroup className="text-5xl" />
 
@@ -53,7 +53,7 @@ const Difference = () => {
               <span className="font-semibold text-xl">
                 Professional əməkdaşlarımız{" "}
               </span>
-              - Uzun illəri aşan təcrübələriylə sizlərə optimal həll yolları
+              - uzun illəri aşan təcrübələriylə sizlərə optimal həll yolları
               təqdim edəcək komandaya sahibik.
             </p>
           </Link>
@@ -61,13 +61,13 @@ const Difference = () => {
         <div>
           <Link
             to={"/contact"}
-            className="flex gap-3 items-center hover:rounded-xl hover:scale-105 hover:bg-primary p-6 hover:text-white  transition-all duration-500"
+            className="flex gap-3 items-center hover:rounded-xl hover:scale-105 hover:bg-primary py-6 hover:text-white  transition-all duration-500"
             onClick={handleLinkClick}
           >
             <MdConnectWithoutContact className="text-5xl" />
             <p>
               <span className="font-semibold text-xl">7/24 əlaqə imkanı</span>-
-              İstənilən zaman, müxtəlif vasitələrlə bizə müraciət edə
+              istənilən zaman, müxtəlif vasitələrlə bizə müraciət edə
               bilərsiniz.
             </p>
           </Link>

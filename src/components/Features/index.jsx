@@ -23,15 +23,12 @@ const Features = () => {
   return (
     <>
       <p className="font-bold text-4xl text-center my-28">Xüsusiyyətlər</p>
-      <div className="container flex justify-between items-center flex-wrap p-14 bg-rose  rounded-xl w-[80%] mx-auto">
+      <div className="container flex justify-between items-center flex-wrap p-10 bg-rose rounded-xl w-[80%] mx-auto">
         {data.map(({ id, title, icon, description }) => (
-          <div
-            key={id}
-            className="xl:w-[25%] lg:w-[45%] md:w-[35%] xl:flex xl:flex-col xl:items-baseline"
-          >
-            <img src={icon} alt="" className="my-6 w-[25%] " />
+          <div key={id} className="flex  flex-col items-center mx-auto">
+            <img src={icon} alt="" className="my-6 mx-auto" />
             <p className="my-4 text-primary text-2xl font-bold">{title} </p>
-            <p>{description}</p>
+            <p className="text-slate-500">{description}</p>
           </div>
         ))}
       </div>
