@@ -1,53 +1,54 @@
-import { FaUserFriends } from "react-icons/fa";
-import { TfiPieChart } from "react-icons/tfi";
-import { GrWorkshop } from "react-icons/gr";
+import { GiAstronautHelmet } from "react-icons/gi";
+import { GiStumpRegrowth } from "react-icons/gi";
+import { GiBigWave } from "react-icons/gi";
 
-import { SlChart } from "react-icons/sl";
+import { GiMoneyStack } from "react-icons/gi";
+import Chart3 from "../Chart3";
 
 const CardThird = () => {
   return (
     <div className="flex flex-col items-center">
-      <img src="./cardFirst.png" alt="" />
-      <div className=" items-center mt-2 hidden md:flex ">
+      <Chart3 />
+      <div className=" items-center mt-2 ">
         <p>Finsweet stastikaları ilə tanış olun:</p>
       </div>
-      <div className="border-t-2 my-3 xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 gap-4">
-        <div className="flex gap-3 items-center shadow-xl rounded-xl hover:skew-x-6 transition-all duration-500 cursor-pointer p-4 ">
+      <div className="md:border-t-2 border-t-0 my-3 sm:my-0 xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 gap-4">
+        <div className="flex gap-3 items-center  rounded-xl hover:shadow-xl hover:scale-105 transition-all duration-500 cursor-pointer p-4 ">
           <div>
-            <FaUserFriends className="text-green-500 text-2xl " />
+            <GiAstronautHelmet className="rounded-full  border-2 text-pvColor2 text-2xl  " />
           </div>
           <div>
             <p className="text-slate-400">Müştərilər</p>
-            <p className=" font-semibold">324+</p>
+            <p className=" font-semibold">3020+</p>
           </div>
         </div>
 
-        <div className="flex justify-center items-center shadow-xl rounded-xl hover:-skew-x-6 transition-all duration-500 cursor-pointer gap-3 p-4">
+        <div className="flex justify-center items-center  rounded-xl  hover:shadow-xl hover:scale-105 transition-all duration-500 cursor-pointer gap-3 p-4">
           <div>
-            <TfiPieChart className="text-lightBlue text-2xl" />
+            <GiStumpRegrowth className="rounded-full  border-2 text-pvColor2 text-2xl " />
           </div>
           <div>
             <p className="text-slate-400">Tərəqqi</p>
             <div className="flex items-center justify-center  gap-2">
-              <p className="font-semibold">32K</p>
+              <p className="font-semibold">6K</p>
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center shadow-xl rounded-xl hover:skew-x-6 transition-all duration-500 cursor-pointer gap-3 p-4">
+        <div className="flex justify-center items-center  rounded-xl  hover:shadow-xl hover:scale-105 transition-all duration-500 cursor-pointer gap-3 p-4">
           <div>
-            <GrWorkshop className="text-orange-800 text-2xl" />
+            <GiBigWave className="rounded-full  border-2 text-pvColor2 text-2xl " />
           </div>
           <div>
-            <p className="text-slate-400">Dönüşüm</p>
+            <p className="text-slate-400">Dinamiklik</p>
             <div className="flex items-center justify-center  gap-2">
               <p className="font-semibold">37.1%</p>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-center items-center gap-3 p-4 shadow-xl rounded-xl hover:-skew-x-6 transition-all duration-500 cursor-pointer ">
+        <div className="flex justify-center items-center gap-3 p-4  rounded-xl  hover:shadow-xl hover:scale-105 transition-all duration-500 cursor-pointer ">
           <div>
-            <SlChart className="text-cyan-700 text-2xl" />
+            <GiMoneyStack className="text-pvColor2 rounded-full  border-2 text-2xl" />
           </div>
           <div>
             <p className="text-slate-400">Qazanclar</p>

@@ -19,6 +19,10 @@ export default {
         iden1: "#8758FF",
         iden2: "#BDCBFF",
         iden3: "#CFBDFF",
+        pvColor: "#84cb9f",
+        pvColor2: "#76b5c5",
+        pvColor3: "#f7e7ce",
+        pvColor4: "#aaaaaa",
       },
       container: {
         center: true,
