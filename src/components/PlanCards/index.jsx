@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Button from "../Button";
-import { NavLink } from "react-router-dom";
 
 const PlanCards = ({ planType }) => {
   const url = "http://localhost:3000/planCards";

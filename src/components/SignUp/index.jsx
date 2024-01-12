@@ -26,12 +26,10 @@ const SignUp = () => {
       navigate("/signIn");
     } catch (error) {
       console.error(error);
+
       alert("Bu hesab ilə qeydiyyatdan keçmisiniz artıq.");
     }
-    const validatePassword = (password) => {
-      const passwordRegex = /^.{8,}$/;
-      return passwordRegex.test(password);
-    };
+
     const validateEmail = (email) => {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       return emailRegex.test(email);
@@ -42,12 +40,6 @@ const SignUp = () => {
       return;
     } else {
       setEmailError("");
-    }
-    if (!validatePassword(password)) {
-      setPasswordError("Xahiş olunur, şifrə ən az 8 simvol uzunluğunda olsun.");
-      return;
-    } else {
-      setPasswordError("");
     }
   };
   const togglePasswordVisibility = () => {
@@ -76,6 +68,7 @@ const SignUp = () => {
               <input
                 type="text"
                 id="name"
+                required
                 placeholder="İsmail"
                 className="w-full p-2 border-slate-300 rounded-md focus:outline-none focus:border-blue-500"
               />
@@ -90,6 +83,7 @@ const SignUp = () => {
               <input
                 type="text"
                 id="fullName"
+                required
                 placeholder="Huseynov"
                 className="w-full p-2 border-slate-300 rounded-md focus:outline-none focus:border-blue-500"
               />
@@ -105,6 +99,7 @@ const SignUp = () => {
             <input
               type="text"
               id="email"
+              required
               placeholder="test@gmail.com"
               className="w-full p-2 border-slate-300 rounded-md focus:outline-none focus:border-blue-500"
               value={email}
@@ -126,6 +121,7 @@ const SignUp = () => {
                 placeholder="**********"
                 className="w-full p-2 border-slate-300 rounded-md focus:outline-none focus:border-blue-500"
                 value={password}
+                required
                 onChange={(e) => setPassword(e.target.value)}
               />
               {isSeen ? (

@@ -98,10 +98,10 @@ const FreeTrialTitle = () => {
               to={"https://www.instagram.com/finsweet"}
               className="  flex
                   flex-col
-                  items-center
+                  items-center hover:scale-110 py-2 rounded-2xl hover:shadow-xl  transition-all duration-500
              "
             >
-              <FaInstagramSquare className="w-6 h-6 hover:scale-110 text-primary" />
+              <FaInstagramSquare className="w-6 h-6  " />
               <p className="text-sm text-slate-500">
                 https://www.instagram.com/finsweet
               </p>
@@ -110,10 +110,10 @@ const FreeTrialTitle = () => {
               to={"https://www.linkedin.com/finsweet"}
               className="  flex
                   flex-col
-                  items-center
+                  items-center hover:scale-110 py-2 rounded-2xl hover:shadow-xl  transition-all duration-500
                 "
             >
-              <GrLinkedin className="w-6 h-6 hover:scale-105 text-primary" />
+              <GrLinkedin className="w-6 h-6  " />
               <p className="text-sm text-slate-500">
                 https://www.linkedin.com/finsweet
               </p>
@@ -122,10 +122,10 @@ const FreeTrialTitle = () => {
               to={"https://www.facebook.com/finsweet"}
               className="  flex
                   flex-col
-                  items-center
+                  items-center hover:scale-110 py-2 rounded-2xl hover:shadow-xl  transition-all duration-500
                "
             >
-              <FaFacebookSquare className="w-6 h-6 hover:scale-105 text-primary" />
+              <FaFacebookSquare className="w-6 h-6 " />
               <p className="text-sm text-slate-500">
                 https://www.facebook.com/finsweet
               </p>
@@ -134,11 +134,11 @@ const FreeTrialTitle = () => {
               to={"https://www.twitter.com/finsweet"}
               className="  flex
                   flex-col
-                  items-center
+                  items-center hover:scale-110 py-2 rounded-2xl hover:shadow-xl  transition-all duration-500
              "
             >
               {" "}
-              <FaTwitterSquare className="w-6 h-6 hover:scale-105 text-primary" />
+              <FaTwitterSquare className="w-6 h-6 " />
               <p className="text-sm text-slate-500">
                 https://www.twitter.com/finsweet
               </p>
@@ -147,10 +147,10 @@ const FreeTrialTitle = () => {
               to={"https://www.whatsapp.com/finsweet"}
               className="flex
                   flex-col
-                  items-center
+                  items-center hover:scale-110 py-2 rounded-xl hover:shadow-xl  transition-all duration-500
                 "
             >
-              <FaSquareWhatsapp className="w-6 h-6 hover:scale-105 text-primary" />
+              <FaSquareWhatsapp className="w-6 h-6" />
               <p className="text-sm text-slate-500">
                 https://www.whatsapp.com/finsweet
               </p>

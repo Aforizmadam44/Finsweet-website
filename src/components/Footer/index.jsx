@@ -52,8 +52,11 @@ const Footer = () => {
           <FooterLink to="/">
             <img src="../LogoSvg.svg" alt="" />
           </FooterLink>
-          <FooterLink to="/trial">Bülletenimizə abunə olun</FooterLink>
+          <p>Bülletenimizə abunə olun</p>
           <div className="inputAndBtn">
+            <p className={`text-red-700 ${isValid ? "hidden" : "block"}`}>
+              Zəhmət olmasa, düzgün e-poçt adresi qeyd edin.
+            </p>
             <input
               type="mail"
               placeholder="Email adresinizi girin"
@@ -65,10 +68,9 @@ const Footer = () => {
               title={"Abunə olun"}
               bg={"bg-slate-50"}
               color={"text-primary"}
-              to={ValidEmail(email) ? "trial" : ""}
-              className={`hover:bg-slate-100 hover:text-slate-100 rounded-xl ${
-                email.trim() === "" && "cursor-not-allowed"
-              }`}
+              hover={"hover:bg-slate-500 hover:text-white hover:border-white"}
+              to={ValidEmail(email) ? "/trial" : ""}
+              className={` ${email.trim() === "" && "cursor-not-allowed"}`}
               onClick={() => {
                 if (ValidEmail(email)) {
                   isValid(true);
@@ -77,15 +79,12 @@ const Footer = () => {
                 }
               }}
             />
-            <p className={`text-red-700 ${isValid ? "hidden" : "block"}`}>
-              Zəhmət olmasa, düzgün e-poçt adresi qeyd edin.
-            </p>
           </div>
         </div>
       </div>
 
       <div className="flex items-center  sm:flex-row md:flex-row lg:flex-row justify-center gap-4 cursor-pointer mt-6 md:mt-10 lg:mt-10 mb-6 lg:mb-10 text-zinc-500 ">
-        <p>© Copyright Finsweet 2023</p>
+        <p>© Copyright Finsweet 2024</p>
         <img
           src="../Instagram.svg"
           alt=""

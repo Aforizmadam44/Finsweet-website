@@ -6,6 +6,7 @@ import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa6";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer";
+import Swal from "sweetalert2";
 
 const SignIn = () => {
   const navigate = useNavigate();
@@ -50,6 +51,13 @@ const SignIn = () => {
       console.log(userCredential);
       navigate("/authDetails");
     } catch (error) {
+      Swal.fire({
+        icon: "error",
+        title: "Bu hesaba giriş etmək mümkün deyil.",
+        text: "Ola bilsin ki, bu məlumatlarla istifəçi yoxdur!",
+        footer:
+          '<a href="/trial"> Geriyə dönmək üçün "Ok" düyməsinə klikləyin?</a>',
+      });
       console.error(error);
     }
     (auth, email, password)

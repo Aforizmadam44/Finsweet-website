@@ -23,7 +23,7 @@ const Frequently = () => {
               }`}
             >
               <div className="flex items-center transition-all duration-500">
-                <h3 className="text-lg font-semibold mr-2 ">
+                <h3 className="font-semibold mr-2  ">
                   {index === 0
                     ? "Biznesimi necə böyüdərəm?"
                     : index === 1

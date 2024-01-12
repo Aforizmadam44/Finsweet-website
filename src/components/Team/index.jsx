@@ -43,7 +43,7 @@ const Team = () => {
                     <p className="text-slate-400">{description}</p>
                   </div>
                   <div className="flex items-center gap-2 ">
-                    <p className="font-bold">İş təcrübəsi:</p>
+                    <p className="font-bold">Təcrübə:</p>
                     <p className="text-slate-400">{experience}</p>
                   </div>
                   <div className="flex items-center gap-2">

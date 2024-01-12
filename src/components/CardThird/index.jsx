@@ -18,7 +18,7 @@ const CardThird = () => {
           </div>
           <div>
             <p className="text-slate-400">Müştərilər</p>
-            <p className="text-lg font-semibold">324+</p>
+            <p className=" font-semibold">324+</p>
           </div>
         </div>
 
@@ -29,7 +29,7 @@ const CardThird = () => {
           <div>
             <p className="text-slate-400">Tərəqqi</p>
             <div className="flex items-center justify-center  gap-2">
-              <p className="text-lg font-semibold">32K</p>
+              <p className="font-semibold">32K</p>
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@ const CardThird = () => {
           <div>
             <p className="text-slate-400">Dönüşüm</p>
             <div className="flex items-center justify-center  gap-2">
-              <p className="text-lg font-semibold">37.1%</p>
+              <p className="font-semibold">37.1%</p>
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@ const CardThird = () => {
           </div>
           <div>
             <p className="text-slate-400">Qazanclar</p>
-            <p className="text-lg font-semibold">$7782.40</p>
+            <p className="font-semibold">$7782.40</p>
           </div>
         </div>
       </div>
