@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
+import ContactSection from "../ContactSection";
 
 const DropUs = () => {
   const [formMessage, setFormMessage] = useState(null);
@@ -190,6 +191,7 @@ const DropUs = () => {
           </div>
         </div>
       </div>
+      <ContactSection />
     </>
   );
 };
