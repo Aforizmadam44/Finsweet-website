@@ -1,0 +1,10 @@
+.closed {
+  max-height: 5rem;
+  overflow: hidden;
+  transition: 0.5s ease-in;
+}
+
+.open {
+  max-height: 6rem;
+  overflow: hidden;
+}

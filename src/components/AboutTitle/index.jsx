@@ -4,11 +4,11 @@ const AboutTitle = () => {
   return (
     <div className="container mx-auto my-28">
       <div className="flex flex-col  items-center my-10 gap-4">
-        <p className="text-4xl font-semibold w-[60%] text-center">
+        <p className="text-5xl font-semibold w-[60%] text-center">
           Uzun illəri aşan təcrübəmizlə sizlərə xidmət etməkdən qürur hissi
           duyuruq.
         </p>
-        <p>
+        <p className="my-4 font-semibold text-slate-500">
           2003-2023 illəri ərzində istər yerli, istərsə də xarici bazarda
           gördüyümüz işlərlə qazandığımız uğurlar keyfiyyətimizdən xəbər verir.{" "}
         </p>

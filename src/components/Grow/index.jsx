@@ -8,10 +8,10 @@ const Grow = () => {
   };
   return (
     <div className="mx-auto my-20 gap-4 justify-between container text-center p-6 ">
-      <h2 className="text-5xl font-bold">
+      <h2 className="text-5xl font-semibold">
         Satışlarınızı və xidmətlərinizi inkişaf etdirin
       </h2>
-      <p className="my-10">
+      <p className="my-4 font-semibold text-slate-500">
         Bizimlə əməkdaşlıq edərək satış və digər bazar iqtisadiyyatı
         əməliyyatlarınızı optimal şəkildə inkişaf etdirin.{" "}
       </p>

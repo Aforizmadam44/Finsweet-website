@@ -46,10 +46,15 @@ const DropUs = () => {
 
   return (
     <>
-      <p className="text-center my-16 font-bold text-5xl">
-        {" "}
-        Bizimlə əlaqə saxlayın
-      </p>
+      <div className="text-center my-16 ">
+        <p className="text-center font-semibold text-5xl">
+          {" "}
+          Bizimlə əlaqə saxlayın
+        </p>
+        <p className="my-4 font-semibold text-slate-500">
+          Biz ən qısa zamanda sizinlə əlaqə saxlayacağıq.
+        </p>
+      </div>
       <div className="container">
         <div className="bg-violet rounded-xl xl:grid xl:grid-cols-2 md:block  items-center p-8">
           <form
@@ -61,7 +66,6 @@ const DropUs = () => {
             <div className="p-12">
               <div className="my-6 space-y-3">
                 <p className="text-4xl font-semibold">Bizə mesaj göndərin</p>
-                <p>Biz ən qısa zamanda sizinlə əlaqə saxlayacağıq.</p>
               </div>
 
               <div className="grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-6">

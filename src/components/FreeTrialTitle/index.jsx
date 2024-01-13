@@ -4,6 +4,7 @@ import { GrLinkedin } from "react-icons/gr";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaSquareWhatsapp } from "react-icons/fa6";
+import { TiSocialYoutube } from "react-icons/ti";
 
 const FreeTrialTitle = () => {
   return (
@@ -12,13 +13,13 @@ const FreeTrialTitle = () => {
         <h1 className="text-4xl font-semibold">
           Sifarişlərinizi tamamlaya, habelə rəsmiləşdirə bilərsiniz.
         </h1>
-        <p className="text-slate-500">
+        <p className="my-4 font-semibold text-slate-500">
           (Təslim alınan sifarişlər ilə bağlı prosedurlar 12 saat sonra
           istifadəyə uyğun vəziyyətə gətiriləcəkdir.)
         </p>
       </div>
       <div className="container mx-auto my-20 grid grid-cols-1  gap-2 items-center justify-center">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center  p-6  rounded-xl shadow-xl">
           <div className="w-[50%]">
             <h1 className="text-2xl font-semibold my-6 text-center">
               Xahiş olunur ki, sifariş vermək üçün daxil olun və yaxud
@@ -55,7 +56,7 @@ const FreeTrialTitle = () => {
             </p>
           </div>
           <div className="flex flex-wrap justify-evenly  cursor-pointer">
-            <div className="flex flex-col items-center gap-4 hover:scale-110 transition-all duration-500">
+            <div className="flex flex-col items-center hover:shadow-xl rounded-xl p-4 gap-4 hover:scale-110 transition-all duration-500">
               <a href="tel:+994505594199">
                 <img src="./dropUs1.png" alt="" />
               </a>
@@ -65,7 +66,7 @@ const FreeTrialTitle = () => {
               </div>
             </div>
 
-            <div className="flex flex-col items-center gap-4 hover:scale-110 transition-all duration-500">
+            <div className="flex flex-col items-center hover:shadow-xl rounded-xl p-4 gap-4 hover:scale-110 transition-all duration-500">
               <a href="mailto:finsweet@gmail.com">
                 <img src="./dropUs2.png" alt="" />
               </a>
@@ -75,7 +76,7 @@ const FreeTrialTitle = () => {
               </div>
             </div>
 
-            <div className="flex flex-col items-center gap-4 hover:scale-110 transition-all duration-500">
+            <div className="flex flex-col hover:shadow-xl rounded-xl p-4 items-center gap-4 hover:scale-110 transition-all duration-500">
               <a href="mailto:finsweet@gmail.com">
                 <img src="./dropUs3.png" alt="" />
               </a>
@@ -93,7 +94,7 @@ const FreeTrialTitle = () => {
               Bizləri izləməyi və bildirişlərdən xəbərdar olmağı unutmayın.{" "}
             </p>
           </div>
-          <div className="w-full grid grid-cols-1  lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-5 gap-6 justify-center items-center">
+          <div className="w-full grid grid-cols-1  md:grid md:grid-cols-2 xl:grid xl:grid-cols-3 gap-6 justify-center items-center">
             <Link
               to={"https://www.instagram.com/finsweet"}
               className="  flex
@@ -153,6 +154,18 @@ const FreeTrialTitle = () => {
               <FaSquareWhatsapp className="w-6 h-6" />
               <p className="text-sm text-slate-500">
                 https://www.whatsapp.com/finsweet
+              </p>
+            </Link>
+            <Link
+              to={"https://www.youtube.com/finsweet"}
+              className="flex
+                  flex-col
+                  items-center hover:scale-110 py-2 rounded-xl hover:shadow-xl  transition-all duration-500
+                "
+            >
+              <TiSocialYoutube className="w-6 h-6" />
+              <p className="text-sm text-slate-500">
+                https://www.youtube.com/finsweet
               </p>
             </Link>
           </div>
