@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Button from "../Button";
+import { BsInfoCircle } from "react-icons/bs";
 
 const PlanCards = ({ planType }) => {
   const url = "http://localhost:3000/planCards";
@@ -32,30 +33,34 @@ const PlanCards = ({ planType }) => {
               <p className="text-md lg:text-slate-400">{plan.description}</p>
             </div>
           </div>
-
           <hr />
           <div className="flex items-center gap-3">
             <img src={plan.listIcon} alt="" />
             <p>{plan.projects}</p>
           </div>
-
           <div className="flex items-center gap-3">
             <img src={plan.listIcon} alt="" />
             <p>{plan.support}</p>
           </div>
           <div className="flex items-center gap-3">
             <img src={plan.listIcon} alt="" />
-            <p> {plan.time}</p>
+            <p> {planType === "monthly" ? plan.time : plan.timeYear}</p>
           </div>
           <div className="flex items-center gap-3">
             <img src={plan.listIcon} alt="" />
-            <p>{plan.strotage}</p>
+            <p>{planType === "monthly" ? plan.strotage : plan.strotageYear}</p>
           </div>
           <div className="flex items-center gap-3">
             <img src={plan.listIcon} alt="" />
             <p>{plan.ads}</p>
           </div>
-          <p className="w-[70%] text-sm">{plan.about}</p>
+          <div className="flex items-baseline justify-center">
+            <span>
+              <BsInfoCircle className="text-xl" />
+            </span>{" "}
+            <p className="text-sm">{plan.about}</p>
+          </div>
+
           <div className="text-center flex flex-col gap-3 my-2">
             <p className="text-3xl font-bold">
               {" "}
