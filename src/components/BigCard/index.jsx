@@ -29,7 +29,7 @@ const BigCard = () => {
           </p>
         </div>
         <div className=" items-center mt-2 hidden md:flex">
-          <p>Finsweet müştəri dəstəyindən ən yaxşı şəkildə yararlanın</p>
+          <p>Finsweet müştəri dəstəyindən ən yaxşı şəkildə yararlanın.</p>
         </div>
       </div>
     </div>

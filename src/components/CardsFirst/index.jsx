@@ -10,7 +10,7 @@ const CardsFirst = () => {
       <Chart1 />
       <p>Nəaliyyət göstəricilərini izləyin:</p>
       <div className="border-t-0 md:border-t-2 my-3 xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 gap-4">
-        <div className="flex items-center my-3 lg:my-0 hover:shadow-xl hover:scale-105 transition-all cursor-pointer duration-500 text-center p-4  rounded-xl shadow-md h-[80%]">
+        <div className="flex items-center my-3 lg:my-0 shadow-xl hover:scale-105 transition-all cursor-pointer duration-500 text-center p-4  rounded-xl h-[80%]">
           <p className="text-slate-400 flex flex-col items-center justify-center">
             <span className="text-primary font-medium text-sm ">
               Məmnuniyyət
@@ -23,7 +23,7 @@ const CardsFirst = () => {
           </p>
         </div>
 
-        <div className=" flex items-center flex-col justify-center p-4 my-3 lg:my-0 hover:shadow-xl hover:scale-105 transition-all duration-500 cursor-pointer  rounded-xl shadow-md  text-center h-[80%]">
+        <div className=" flex items-center flex-col justify-center p-4 my-3 lg:my-0 shadow-xl hover:scale-105 transition-all duration-500 cursor-pointer  rounded-xl   text-center h-[80%]">
           <p className="text-slate-400">
             <span className="text-primary font-medium text-sm">
               Məhsuldarlıq
@@ -36,7 +36,7 @@ const CardsFirst = () => {
           <span className="font-semibold text-slate-400">28.4%</span>
         </div>
 
-        <div className=" flex  items-center justify-center  p-4 my-3 lg:my-0 hover:shadow-xl hover:scale-105 transition-all duration-500 cursor-pointer  rounded-xl shadow-md text-center h-[80%]">
+        <div className=" flex  items-center justify-center  p-4 my-3 lg:my-0 shadow-xl hover:scale-105 transition-all duration-500 cursor-pointer  rounded-xl  text-center h-[80%]">
           <p className="text-slate-400">
             <div>
               <span className="text-primary font-medium text-sm"> Qazanc</span>
@@ -50,7 +50,7 @@ const CardsFirst = () => {
           </p>
         </div>
 
-        <div className="flex  items-center justify-center  my-3 lg:my-0 hover:shadow-xl hover:scale-105 transition-all duration-500 cursor-pointer  rounded-xl gap-4 p-4 shadow-md  text-center h-[80%]">
+        <div className="flex  items-center justify-center  my-3 lg:my-0 shadow-xl hover:scale-105 transition-all duration-500 cursor-pointer  rounded-xl gap-4 p-4   text-center h-[80%]">
           <div>
             <p className="text-slate-400 flex flex-col items-center justify-center">
               <span className="text-primary font-medium text-sm">Itki</span>

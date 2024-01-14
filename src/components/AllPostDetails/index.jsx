@@ -59,8 +59,8 @@ const AllPostDetails = () => {
           </div>
         </div>
         <div className="my-28">
-          <p className="text-2xl text-center font-semibold my-6">
-            Digər bloqlar:
+          <p className="text-2xl text-center font-semibold my-10">
+            Digər bloqlar :
           </p>
           <div className="grid grid-cols-1 md:grid md:grid-cols-3 gap-2">
             {limited.map((item) => (

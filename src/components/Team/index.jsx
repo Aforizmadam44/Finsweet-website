@@ -17,7 +17,7 @@ const Team = () => {
       });
   }, []);
   return (
-    <div className="container xl:grid xl:grid-cols-2 items-center sm:block sm:space-y-6">
+    <div className="xl:grid xl:grid-cols-2 items-center sm:block sm:space-y-6 w-[80%] mx-auto">
       <div className="sm:space-y-4 ">
         <p className="text-4xl font-semibold my-4">Bacarıqlı Komandamız</p>
         <p className="text-lg text-lightBlue">

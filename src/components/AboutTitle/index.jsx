@@ -1,8 +1,6 @@
-import React from "react";
-
 const AboutTitle = () => {
   return (
-    <div className="container mx-auto my-28">
+    <div className="container mx-auto my-20">
       <div className="flex flex-col  items-center my-10 gap-4">
         <p className="text-5xl font-semibold w-[60%] text-center">
           Uzun illəri aşan təcrübəmizlə sizlərə xidmət etməkdən qürur hissi
@@ -17,17 +15,17 @@ const AboutTitle = () => {
         <img
           src="./aboutTitle.png"
           alt=""
-          className="cursor-pointer transition-all ease duration-900 hover:scale-105 "
+          className="cursor-pointer transition-all ease duration-500 hover:scale-105 "
         />
         <img
           src="./aboutTitle2.png"
           alt=""
-          className="cursor-pointer transition-all ease duration-900 hover:scale-105 "
+          className="cursor-pointer transition-all ease duration-500 hover:scale-105 "
         />
         <img
           src="./aboutTitle3.png"
           alt=""
-          className="cursor-pointer transition-all ease duration-900 hover:scale-105 "
+          className="cursor-pointer transition-all ease duration-500 hover:scale-105 "
         />
       </div>
       <div className="flex flex-col gap-4 items-center my-28">

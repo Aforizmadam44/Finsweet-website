@@ -1,7 +1,7 @@
 const LatestBlog = () => {
   return (
     <div>
-      <div className="container text-center space-y-4 my-28">
+      <div className="container text-center space-y-4 my-20">
         <p className="text-5xl font-semibold ">Ən son bloqlarımızı oxuyun</p>
         <p className="my-4 font-semibold text-slate-500">
           Bu bölmədə bloqlar haqqında məlumat və onlarla yaxından tanış ola

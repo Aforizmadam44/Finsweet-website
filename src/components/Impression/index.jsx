@@ -18,7 +18,7 @@ const Impression = () => {
           <p className="w-[60%] mb-6 text-slate-600">
             Bizim xidmətlərdən istifadə etməklə daha çox istifadəçi ilə təmasda
             olmaqla bərabər, inkişaf və gəlir strukturunu da müntəzəm həll etmiş
-            olursunuz
+            olursunuz.
           </p>
           <Button
             title={"Indi sınayın"}

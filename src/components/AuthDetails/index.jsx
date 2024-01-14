@@ -3,7 +3,7 @@ import { auth } from "../../firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { GiAbstract072, GiAbstract016, GiPlatform } from "react-icons/gi";
 import Trial from "../../pages/Trial";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 import Button from "../Button";
 import { NavLink } from "react-router-dom";
@@ -17,19 +17,84 @@ const AuthDetails = () => {
   const [selectedDuration, setSelectedDuration] = useState(3);
   const [showInputs, setShowInputs] = useState(false);
   const [paymentComplete, setPaymentComplete] = useState(false);
-  const navigate = useNavigate();
 
-  const paymentControl = () => {
-    Swal.fire({
-      title: "Təşəkkür edirik.!",
-      text: "Ödəməniz tamamlandı və bizə çatdırıldı.!",
-      icon: "success",
-      timer: 3000,
-    });
+  const [name, setName] = useState("");
+  const [surName, setSurName] = useState("");
+  const [cartNumber, setCartNumber] = useState("");
+  const [expMonth, setExpMonth] = useState("");
+  const [expYear, setExpYear] = useState("");
+  const [cvv, setCvv] = useState("");
+  const [address, setAddress] = useState("");
 
-    paymentComplete(true);
-    navigate.push("/trial");
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+
+    switch (name) {
+      case "name":
+        setName(value);
+        break;
+      case "surName":
+        setSurName(value);
+        break;
+      case "cartNumber":
+        setCartNumber(value);
+        break;
+      case "expMonth":
+        setExpMonth(value);
+        break;
+      case "expYear":
+        setExpYear(value);
+        break;
+      case "cvv":
+        setCvv(value);
+        break;
+      case "address":
+        setAddress(value);
+        break;
+    }
   };
+  const paymentControl = () => {
+    if (
+      name &&
+      surName &&
+      cartNumber &&
+      expMonth &&
+      expYear &&
+      cvv &&
+      address
+    ) {
+      Swal.fire({
+        position: "top",
+        icon: "success",
+        title: "Sifarişiniz alındı, təşəkkür edirik.",
+        showConfirmButton: false,
+        timer: 3000,
+      });
+    } else {
+      Swal.fire({
+        title: "Xanaları boş buraxmamalısınız.",
+        showClass: {
+          popup: `
+            animate__animated
+            animate__fadeInUp
+            animate__faster
+          `,
+        },
+        hideClass: {
+          popup: `
+            animate__animated
+            animate__fadeOutDown
+            animate__faster
+          `,
+        },
+      });
+    }
+  };
+
+  const handlePayment = () => {
+    setShowInputs(true);
+  };
+
   useEffect(() => {
     const listen = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -72,47 +137,49 @@ const AuthDetails = () => {
     const packagePrice = packagePrices[selectedPackage] || 0;
     return packagePrice * selectedDuration;
   };
-  const handlePayment = () => {
-    setShowInputs(true);
-  };
+
   return (
     <>
       <Navbar />
       <div className="w-full text-center flex flex-col items-center gap-2 ">
         {authUser ? (
           <>
-            <div className="my-20 flex flex-col items-center container">
-              <div className="flex items-center gap-2 text-xl">
-                <span>Salam hörmətli istifadəçi,</span>{" "}
-                <p className=" text-orange-600">{authUser.email}</p>
-                <p>e-poçt ünvanı ilə giriş etdiyiniz üçün təşəkkür edirik.</p>
+            <div className="my-20 flex flex-col items-center justify-center container w-[70%]">
+              <div className="flex items-center  gap-2 text-xl">
+                <span>Salam,</span>{" "}
+                <p className=" text-orange-600 font-semibold text-xl">
+                  {authUser.email}
+                </p>
               </div>
+              <p>e-poçt ünvanı ilə giriş etdiyiniz üçün təşəkkür edirik.</p>
               <div className="flex items-center ">
-                <p>Hesabınızdan çıxmaq istəyirsinizsə,</p>
-                <button onClick={userSignOut} className="text-softBlue mx-1">
-                  buraya
-                </button>{" "}
-                <span> klikləyin.</span>
+                <p className="text-slate-400">
+                  (Hesabınızdan çıxmaq istəyirsinizsə,
+                  <button onClick={userSignOut} className="text-softBlue mx-1">
+                    buraya
+                  </button>{" "}
+                  <span> klikləyin.)</span>
+                </p>
               </div>
             </div>
             {showInputs ? (
-              <p className="text-2xl font-semibold my-4 w-[30%]">
+              <p className="text-3xl font-semibold my-4 w-[60%] text-center">
                 Ödəmə əməliyyatlarını yerinə yetirin.
               </p>
             ) : (
-              <p className="text-2xl font-semibold my-4 w-[30%]">
+              <p className="text-2xl font-semibold my-4 w-[30%]text-center">
                 Sifariş əməliyyatlarını tamamlamaq üçün xahiş olunur ki,
                 mərhələləri izləyin.
               </p>
             )}
 
             {showInputs || (
-              <div className="shadow-2xl w-[80%] rounded-lg p-8 ">
+              <div className="shadow-2xl w-[80%] mx-auto rounded-lg p-8 ">
                 <p className="text-softBlue text-xl my-6">
                   Sizə uyğun paketi seçin:
                 </p>
-                <div className="grid grid-cols-1 xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2 container  items-center gap-3">
-                  <div className="border-2 my-2 flex items-center gap-6 transition-all duration-500 hover:bg-primary hover:text-white p-4 rounded-xl shadow-xl">
+                <div className="grid grid-cols-1 xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2 container mx-auto justify-center  items-center gap-3">
+                  <div className="border-2 my-2 flex items-center justify-center gap-6 transition-all duration-500 hover:bg-primary hover:text-white p-4 rounded-xl shadow-xl">
                     <NavLink
                       className="flex items-center justify-center gap-2"
                       onClick={() => handlePackageSelection("sabit")}
@@ -130,7 +197,7 @@ const AuthDetails = () => {
                             (ödənişsiz)
                           </span>
                         </div>
-                        <p>
+                        <p className="flex flex-col gap-2 items-center">
                           Ilkin əməliyyatlarını özündə birləşdirir.
                           <br />
                           <span className="text-gray-500">
@@ -142,7 +209,7 @@ const AuthDetails = () => {
                     </NavLink>
                   </div>
 
-                  <div className="border-2 my-2 flex items-center gap-4 transition-all duration-500 hover:bg-primary hover:text-white p-4 rounded-xl shadow-xl">
+                  <div className="border-2 my-2 flex items-center justify-center gap-4 transition-all duration-500 hover:bg-primary hover:text-white p-4 rounded-xl shadow-xl">
                     <NavLink
                       className="flex items-center justify-center gap-2"
                       onClick={() => handlePackageSelection("platinium")}
@@ -159,7 +226,7 @@ const AuthDetails = () => {
                             (59$)
                           </span>
                         </div>
-                        <p>
+                        <p className="flex flex-col gap-2 items-center">
                           Istənilən sayda əməliyyatlara imkan verir.
                           <br />
                           <span className="text-gray-500">
@@ -171,7 +238,7 @@ const AuthDetails = () => {
                     </NavLink>
                   </div>
 
-                  <div className="border-2 flex items-center gap-4 transition-all duration-500 hover:bg-primary hover:text-white p-4 rounded-xl shadow-xl">
+                  <div className="border-2 flex items-center justify-center gap-4 transition-all duration-500 hover:bg-primary hover:text-white p-4 rounded-xl shadow-xl">
                     <NavLink
                       className="flex items-center justify-center gap-2"
                       onClick={() => handlePackageSelection("standart")}
@@ -181,14 +248,12 @@ const AuthDetails = () => {
                           <span className="text-sky-950">
                             <GiAbstract072 className="text-green-500" />
                           </span>
-                          <p className="text-xl font-semibold">
-                            Standart paket
-                          </p>
+                          <p className="text-xl font-semibold">Gümüş paket</p>
                           <span className="font-thin text-md text-slate-400">
                             (39$)
                           </span>
                         </div>
-                        <p>
+                        <p className="flex flex-col gap-2 items-center">
                           Əməliyyatların qismi öhdəlik yaradır.
                           <br />
                           <span className="text-gray-500">
@@ -200,7 +265,7 @@ const AuthDetails = () => {
                     </NavLink>
                   </div>
                 </div>
-                <div className="flex my-6 items-center justify-around">
+                <div className="flex my-6 items-center justify-center gap-4">
                   <p>Xidmət müddəti:</p>
                   <select
                     name=""
@@ -208,6 +273,7 @@ const AuthDetails = () => {
                     className="h-10 text-center rounded-lg"
                     onChange={handleDurationSelection}
                   >
+                    <option disabled>Aylıq</option>
                     <option value="3">3 ay</option>
                     <option value="6">6 ay</option>
                     <option value="9">9 ay</option>
@@ -225,51 +291,65 @@ const AuthDetails = () => {
             {showInputs && (
               <div className="my-8 flex flex-col items-center shadow-xl rounded-xl p-8">
                 <form action="">
-                  <div className="flex gap-2  border-b-2">
-                    <div className="flex flex-col items-start">
-                      <label htmlFor="name">Adınız</label>
+                  <div className="flex items-center gap-2 justify-center border-b-2 ">
+                    <div className="flex flex-col  items-center justify-center sm:items-start">
+                      <label htmlFor="name" className="font-semibold">
+                        Adınız
+                      </label>
                       <input
                         type="text"
                         id="name"
                         placeholder="İsmail"
                         maxLength={16}
-                        className="my-2 p-2 rounded-lg"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        className="my-2 p-2 rounded-lg w-[50%] sm:w-full  "
                         required
                       />
                     </div>
-                    <div className="flex flex-col items-start">
-                      <label htmlFor="surName">Soyadınız</label>
+                    <div className="flex flex-col items-start ">
+                      <label htmlFor="surName" className="font-semibold">
+                        Soyadınız
+                      </label>
                       <input
                         type="text"
                         placeholder="Huseynov"
                         maxLength={16}
                         id="surName"
-                        className="my-2 p-2 rounded-lg"
+                        value={surName}
+                        onChange={(e) => setSurName(e.target.value)}
+                        className="my-2 p-2 rounded-lg w-[50%] sm:w-full "
                         required
                       />
                     </div>
                   </div>
-                  <div className="flex flex-col items-start w-full">
-                    <label htmlFor="cartNumber">Kart Nömrəsi</label>
+                  <div className="flex flex-col px-16 sm:px-0 items-start w-full">
+                    <label htmlFor="cartNumber" className="font-semibold">
+                      Kart Nömrəsi
+                    </label>
                     <input
                       type="text"
                       id="cartNumber"
                       maxLength={16}
+                      value={cartNumber}
+                      onChange={(e) => setCartNumber(e.target.value)}
                       placeholder="1234 5678 9101 1123"
-                      className="my-2 p-2 w-full rounded-lg"
+                      className="my-2 p-2 w-[80%] sm:w-full rounded-lg"
                     />
                   </div>
-                  <div className="flex  justify-between border-b-2">
+                  <div className="flex justify-around sm:justify-between  border-b-2">
                     <div className="flex flex-col items-start">
-                      <label htmlFor="exp" className="">
-                        Son ist. tarixi
+                      <label htmlFor="exp" className="font-semibold">
+                        Son istifadə tarixi
                       </label>
-                      <div className="flex items-center">
+                      <div className="flex items-center gap-2">
                         <input
                           type="text"
                           id="exp"
+                          value={expYear}
                           required
                           maxLength={2}
+                          onChange={(e) => setExpYear(e.target.value)}
                           placeholder="01"
                           className="my-2 p-2 rounded-lg w-10"
                         />
@@ -277,39 +357,66 @@ const AuthDetails = () => {
                         <input
                           type="text"
                           id="exp"
+                          value={expMonth}
                           required
                           maxLength={2}
+                          onChange={(e) => setExpMonth(e.target.value)}
                           placeholder="26"
                           className="my-2 p-2 rounded-lg w-10"
                         />
                       </div>
                     </div>
                     <div className="flex flex-col items-start">
-                      <label htmlFor="cvv">Cvc</label>
+                      <label htmlFor="cvv" className="font-semibold">
+                        Cvc
+                      </label>
                       <input
                         type="text"
                         id="cvv"
                         placeholder="123"
+                        value={cvv}
+                        onChange={(e) => setCvv(e.target.value)}
                         maxLength={3}
                         className="my-2 p-2 rounded-lg w-14"
                         required
                       />
                     </div>
                   </div>
-                  <div className="flex items-center gap-6">
-                    <label htmlFor="address">Ünvan:</label>
+                  <div className="block sm:flex sm:items-center  gap-6">
+                    <label
+                      htmlFor="address"
+                      className="font-semibold block sm:inline-block"
+                    >
+                      Ünvan:
+                    </label>
                     <input
                       type="text"
                       id="address"
-                      placeholder="Ünvanınızı qeyd edin"
+                      value={address}
+                      onChange={(e) => setAddress(e.target.value)}
+                      placeholder="Faktiki yaşadığınız yer."
                       maxLength={30}
-                      className="my-2 p-2 rounded-lg"
+                      className="my-2 p-2 rounded-lg mx-2 sm:mx-0"
                       required
                     />
+                    <select name="" id="" className="rounded-lg">
+                      <option value="" disabled>
+                        Şəhər
+                      </option>
+                      <option value="">Bakı</option>
+                      <option value="">Sumqayıt</option>
+                      <option value="">Abşeron</option>
+                    </select>
                   </div>
-                  <div className="my-6 flex items-center justify-between gap-2">
-                    <p>Ümumi ödənəcək məbləğ:</p>
-                    <p className="border-b-2">{calculateTotalAmount()}$</p>
+                  <div className="flex items-center justify-center sm:justify-start my-4 gap-2 ">
+                    <p>Məlumatları təsdiqləyirəm</p>
+                    <input type="checkbox" name="" id="" required />
+                  </div>
+                  <div className="my-6 flex items-center sm:justify-end justify-center gap-2">
+                    <p className="">Ümumi ödənəcək məbləğ:</p>
+                    <p className="border-b-2 font-semibold">
+                      {calculateTotalAmount()}$
+                    </p>
                   </div>
                   <div className="flex justify-between items-center w-full">
                     <button

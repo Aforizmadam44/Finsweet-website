@@ -18,7 +18,7 @@ const Difference = () => {
           Niyə bizimlə birlikdə çalışmalısınız?
         </p>
         <h2 className="text-primary text-4xl w-[70%] font-semibold my-8">
-          Biznesinizi perspektiv planlaşdırma səviyyəsinə yüksəltmək üçün
+          Biznesinizi perspektiv planlaşdırma səviyyəsinə yüksəltmək üçün.
         </h2>
         <p className="w-[70%] text-slate-500">
           Uzun illəri aşan təcrübəmiz sayəsində sizə bizimlə həmkarlıq etməyiniz

@@ -47,7 +47,7 @@ const DropUs = () => {
 
   return (
     <>
-      <div className="text-center my-16 ">
+      <div className="text-center my-20 ">
         <p className="text-center font-semibold text-5xl">
           {" "}
           Bizimlə əlaqə saxlayın

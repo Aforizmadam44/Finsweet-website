@@ -20,7 +20,7 @@ const ContactSection = () => {
             to={"https://www.instagram.com/finsweet"}
             className="  flex
             flex-col
-            items-center hover:scale-110 py-2 rounded-2xl hover:shadow-xl  transition-all duration-500
+            items-center hover:scale-110 py-2 rounded-2xl hover:bg-primary hover:text-white transition-all duration-500
        "
           >
             <FaInstagramSquare className="w-6 h-6  " />
@@ -32,7 +32,7 @@ const ContactSection = () => {
             to={"https://www.linkedin.com/finsweet"}
             className="  flex
             flex-col
-            items-center hover:scale-110 py-2 rounded-2xl hover:shadow-xl  transition-all duration-500
+            items-center hover:scale-110 py-2 rounded-2xl hover:bg-primary hover:text-white transition-all duration-500
           "
           >
             <GrLinkedin className="w-6 h-6  " />
@@ -44,7 +44,7 @@ const ContactSection = () => {
             to={"https://www.facebook.com/finsweet"}
             className="  flex
             flex-col
-            items-center hover:scale-110 py-2 rounded-2xl hover:shadow-xl  transition-all duration-500
+            items-center hover:scale-105 py-2 rounded-2xl hover:bg-primary hover:text-white   transition-all duration-500
          "
           >
             <FaFacebookSquare className="w-6 h-6 " />
@@ -56,7 +56,7 @@ const ContactSection = () => {
             to={"https://www.twitter.com/finsweet"}
             className="  flex
             flex-col
-            items-center hover:scale-110 py-2 rounded-2xl hover:shadow-xl  transition-all duration-500
+            items-center hover:scale-110 py-2 rounded-2xl hover:bg-primary hover:text-white transition-all duration-500
        "
           >
             {" "}
@@ -69,7 +69,7 @@ const ContactSection = () => {
             to={"https://www.whatsapp.com/finsweet"}
             className="flex
             flex-col
-            items-center hover:scale-110 py-2 rounded-xl hover:shadow-xl  transition-all duration-500
+            items-center hover:scale-110 py-2 rounded-xl hover:bg-primary hover:text-white transition-all duration-500
           "
           >
             <FaSquareWhatsapp className="w-6 h-6" />
@@ -81,7 +81,7 @@ const ContactSection = () => {
             to={"https://www.youtube.com/finsweet"}
             className="flex
             flex-col
-            items-center hover:scale-110 py-2 rounded-xl hover:shadow-xl  transition-all duration-500
+            items-center hover:scale-110 py-2 rounded-xl hover:bg-primary hover:text-white transition-all duration-500
           "
           >
             <TiSocialYoutube className="w-6 h-6" />
