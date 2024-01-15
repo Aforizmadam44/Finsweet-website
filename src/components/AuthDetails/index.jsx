@@ -396,7 +396,7 @@ const AuthDetails = () => {
                       onChange={(e) => setAddress(e.target.value)}
                       placeholder="Faktiki yaşadığınız yer."
                       maxLength={30}
-                      className="my-2 p-2 rounded-lg mx-2 sm:mx-0"
+                      className="my-2 p-2 rounded-lg mx-2 sm:mx-0n"
                       required
                     />
                     <select name="" id="" className="rounded-lg">

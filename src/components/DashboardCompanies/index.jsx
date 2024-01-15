@@ -45,7 +45,7 @@ const DashboardCompanies = () => {
                 <span>
                   <SiChakraui />
                 </span>{" "}
-                Chakra Soft Ui Version
+                Kiçik və orta biznes inkişaf fondu
               </div>
             </td>
             <td className="px-6 py-4 whitespace-nowrap">
@@ -60,7 +60,6 @@ const DashboardCompanies = () => {
               <div className="text-sm text-gray-900">60/100</div>
             </td>
           </tr>
-          {/* Diğer satırları buraya ekleyin */}
         </tbody>
         <tbody className="bg-white divide-y divide-gray-200 ">
           <tr>
@@ -69,7 +68,7 @@ const DashboardCompanies = () => {
                 <span>
                   <MdOutlineDownloadDone />
                 </span>{" "}
-                Add Progress Track
+                Reklam tərəqqi sistemi
               </div>
             </td>
             <td className="px-6 py-4 whitespace-nowrap">
@@ -84,7 +83,6 @@ const DashboardCompanies = () => {
               <div className="text-sm text-gray-900">10/100</div>
             </td>
           </tr>
-          {/* Diğer satırları buraya ekleyin */}
         </tbody>
         <tbody className="bg-white divide-y divide-gray-200 ">
           <tr>
@@ -93,7 +91,7 @@ const DashboardCompanies = () => {
                 <span>
                   <FaAutoprefixer />
                 </span>{" "}
-                Fix Platform Errors
+                Platform xətalarının bərpası
               </div>
             </td>
             <td className="px-6 py-4 whitespace-nowrap">
@@ -108,7 +106,6 @@ const DashboardCompanies = () => {
               <div className="text-sm text-gray-900">100/100</div>
             </td>
           </tr>
-          {/* Diğer satırları buraya ekleyin */}
         </tbody>
         <tbody className="bg-white divide-y divide-gray-200 ">
           <tr>
@@ -117,7 +114,7 @@ const DashboardCompanies = () => {
                 <span>
                   <FaMobileScreenButton />
                 </span>{" "}
-                Launch our mobile App
+                Mobil tətbiqlərin uyğunlaşdırılması
               </div>
             </td>
             <td className="px-6 py-4 whitespace-nowrap">

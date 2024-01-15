@@ -1,3 +1,6 @@
+import DashboardChart from "../DashboardChart";
+import { HiMiniUserGroup } from "react-icons/hi2";
+
 const DashboardCards = () => {
   return (
     <div className="flex flex-col">
@@ -43,19 +46,11 @@ const DashboardCards = () => {
             <p>İstifadəçilər</p>
             <p className="font-bold">324+</p>
           </div>
-          <img
-            src="./dash1.svg"
-            alt=""
-            className="md:w-[30%] xl:w-[30%] hidden md:block"
-          />
+          <HiMiniUserGroup className="md:w-[30%] xl:w-[30%] text-2xl hidden md:block" />
         </div>
       </div>
-      <div>
-        <img
-          src="./overall.png"
-          alt=""
-          className="w-full xl:h-[130%] lg:h-[150%] h-[200%] mx-auto my-auto"
-        />
+      <div className=" mx-auto my-auto">
+        <DashboardChart />
       </div>
     </div>
   );
