@@ -16,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <div className="container my-20 flex text-center items-center flex-col gap-6 text-primary font-bold w-[60%]">
+    <div className="container my-2 mb-28 flex text-center items-center flex-col gap-6 text-primary font-bold w-[60%]">
       <p className="font-semibold text-slate-500">
         Bu proqram vasitəsiylə uzun illərin təcrübəsinə əsaslanaraq sizə unikal
         təkliflər və professional xidmətlər təqdim edirik, bizə qoşulun və

@@ -10,7 +10,7 @@ import { IoIosSettings } from "react-icons/io";
 const DashboardLinks = () => {
   return (
     <>
-      <div className="flex border-r-2 pr-6 sm:block p-8 lg:p-0 ">
+      <div className="flex border-r-2 pr-6 sm:block p-10 lg:p-0 ">
         <div className="links flex flex-col gap-8 ">
           <div className="flex items-center  gap-2 rounded-md n">
             <Link
@@ -18,7 +18,8 @@ const DashboardLinks = () => {
               className={`flex items-center mt-6
           }`}
             >
-              <img src="../Logo.png" className="h-8" alt="Logo" />
+              <p></p>
+              <img src="../Logo.png" className="h-8 p-2" alt="Logo" />
             </Link>
           </div>
           <div className="flex flex-col items-center p-2   gap-2 rounded-md hover:bg-primary hover:text-slate-50">
