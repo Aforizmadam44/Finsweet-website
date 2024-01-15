@@ -12,27 +12,27 @@ const data = [
   {
     name: "Müştərilər",
     uv: 3024,
-    pv: 3024,
+    dəyər: 3024,
     amt: 3030,
   },
 
   {
     name: "Tərəqqi",
     uv: 6000,
-    pv: 6130,
+    dəyər: 6130,
     amt: 2000,
   },
 
   {
     name: "Artış",
     uv: 2390,
-    pv: 4200,
+    dəyər: 4200,
     amt: 2500,
   },
   {
     name: "Qazanc",
     uv: 3490,
-    pv: 7782,
+    dəyər: 7782,
     amt: 2100,
   },
 ];
@@ -90,7 +90,7 @@ export default function Chart3() {
         <YAxis />
         <Tooltip content={<CustomTooltip />} />
         <Legend />
-        <Bar dataKey="pv" barSize={20} fill="#76b5c5" />
+        <Bar dataKey="dəyər" barSize={20} fill="#76b5c5" />
       </BarChart>
     </div>
   );

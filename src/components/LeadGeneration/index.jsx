@@ -13,7 +13,7 @@ const LeadGeneration = () => {
           potensialın fövqündə əmək nəaliyyətlərinə imza atacaqsınız.
         </p>
       </div>
-      <div className="shadow-2xl rounded-xl p-6">
+      <div className="shadow-xl rounded-xl p-6">
         <CardThird />
       </div>
     </div>

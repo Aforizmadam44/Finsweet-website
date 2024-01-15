@@ -11,27 +11,27 @@ import {
 const data = [
   {
     name: "Məhsuldarlıq",
-    uv: 4000,
-    pv: 2400,
+    xərc: 4000,
+    gəlir: 2400,
     amt: 2400,
   },
 
   {
     name: "Məmnuniyyət",
-    uv: 1890,
-    pv: 4800,
+    xərc: 1890,
+    gəlir: 4800,
     amt: 2181,
   },
   {
     name: "Qazanc",
-    uv: 2390,
-    pv: 3800,
+    xərc: 2390,
+    gəlir: 3800,
     amt: 2500,
   },
   {
     name: "İtki",
-    uv: 3490,
-    pv: 4300,
+    xərc: 3490,
+    gəlir: 4300,
     amt: 2100,
   },
 ];
@@ -57,14 +57,14 @@ export default function Chart1() {
       <Legend />
       <Line
         type="monotone"
-        dataKey="pv"
+        dataKey="gəlir"
         stroke="#8884d8"
         strokeDasharray="5 5"
       />
 
       <Line
         type="monotone"
-        dataKey="uv"
+        dataKey="xərc"
         stroke="#82ca9d"
         strokeDasharray="3 4 5 2"
       />

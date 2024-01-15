@@ -23,6 +23,7 @@ const Product = () => {
           <title>Məhsullar</title>
         </Helmet>
         <Navbar />
+
         <Grow />
         <Logos />
         <Service />

@@ -19,9 +19,11 @@ const Team = () => {
   return (
     <div className="xl:grid xl:grid-cols-2 items-center sm:block sm:space-y-6 w-[80%] mx-auto">
       <div className="sm:space-y-4 ">
-        <p className="text-4xl font-semibold my-4">Bacarıqlı Komandamız</p>
-        <p className="text-lg text-lightBlue">
-          Peşəkar komandamız ilə tanış olun.
+        <p className="text-4xl font-semibold text-pvColor2 my-4">
+          Bacarıqlı Komandamız
+        </p>
+        <p className="text-lg text-slate-400">
+          Peşəkar komandamız ilə tanış olun:
         </p>
       </div>
       <div className="xl:grid xl:grid-cols-3 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2  sm:grid sm:grid-cols-2  gap-4  my-6">

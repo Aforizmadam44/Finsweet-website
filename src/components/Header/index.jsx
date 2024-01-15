@@ -17,9 +17,6 @@ const Header = () => {
 
   return (
     <div className="container my-20 flex text-center items-center flex-col gap-6 text-primary font-bold w-[60%]">
-      <h1 className="text-5xl font-semibold">
-        Satışlarınızı ve xidmətlərinizi inkişaf etdirmək üçün ən yaxşı proqram.
-      </h1>
       <p className="font-semibold text-slate-500">
         Bu proqram vasitəsiylə uzun illərin təcrübəsinə əsaslanaraq sizə unikal
         təkliflər və professional xidmətlər təqdim edirik, bizə qoşulun və

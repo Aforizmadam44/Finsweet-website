@@ -12,6 +12,7 @@ import Footer from "../../components/Footer";
 import Dashboard from "../../components/Dashboard";
 import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
+import BannerSlide from "../../components/BannerSlide";
 const HomePage = () => {
   return (
     <>
@@ -24,6 +25,7 @@ const HomePage = () => {
           <title>Ana səhifə</title>
         </Helmet>
         <Navbar />
+        <BannerSlide />
         <Header />
         <Dashboard />
         <Solution />
